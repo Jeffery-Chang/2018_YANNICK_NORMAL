@@ -1,0 +1,55 @@
+/*
+footer .mrt-cart{
+    animation: trans 6s cubic-bezier(0.715, -0.120, 0.415, 1.055) infinite;
+}
+@media screen and (max-width: 767px) {
+    animation: trans_767 6s cubic-bezier(0.715, -0.120, 0.415, 1.055) infinite;
+}
+@keyframes trans{
+    0% {
+        opacity: 1;
+        left: -20%;
+    }
+    45% {
+        opacity: 1;
+        left: 120%;
+    }
+    45.5%{
+        opacity: 0;
+    }
+    46% {
+        opacity: 0;
+        left: -50%;
+    }
+    46.5%{
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        left: -20%;
+    }
+}
+@keyframes trans{
+    0% {
+        opacity: 1;
+        left: -100%;
+    }
+    45% {
+        opacity: 1;
+        left: 120%;
+    }
+    45.5%{
+        opacity: 0;
+    }
+    46% {
+        opacity: 0;
+        left: -100%;
+    }
+    46.5%{
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        left: -100%;
+    }
+}*/
