@@ -1,0 +1,250 @@
+// all mixins.
+%all-100 {
+    width: 100%;
+    height: 100%;
+}
+
+%txt_justify {
+    text-align: justify;
+    text-justify: inter-ideographic;
+}
+
+.flex-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%pos-mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// constant-width-to-height-ratio
+%square {
+    background: #333;
+    width: 50%;
+    padding-top: 50%;
+}
+
+%Y50 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%X50 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// Custom text selection
+// ::selection {
+//     background: aquamarine;
+//     color: black;
+// }
+// %custom-text-selection::selection {
+//     background: deeppink;
+//     color: white;
+// }
+// media
+@mixin media-ie {
+    @media screen\0 {
+        @content
+    }
+}
+
+@mixin media($width) {
+    @media screen and (max-width: $width) {
+        @content
+    }
+}
+
+@mixin media-device($width) {
+    @media screen and (max-device-width: $width) {
+        @content
+    }
+}
+
+@mixin media-min($width) {
+    @media screen and (min-width: $width) {
+        @content
+    }
+}
+
+@mixin media-h($width) {
+    @media screen and (max-height: $width) {
+        @content
+    }
+}
+
+@mixin min-1025 {
+    @media screen and (min-width: 1025px) {
+        @content
+    }
+}
+
+@mixin hover {
+    &:hover {
+        @media screen and (min-width: 1025px) {
+            @content
+        }
+    }
+}
+
+@mixin pc-1680 {
+    @media screen and (max-width: 1680px) {
+        @content
+    }
+}
+
+@mixin pc-1440 {
+    @media screen and (max-width: 1440px) {
+        @content
+    }
+}
+
+@mixin pc-1280 {
+    @media screen and (max-width: 1280px) {
+        @content
+    }
+}
+
+// pad
+@mixin m-1024 {
+    @media screen and (max-width: 1024px) {
+        @content
+    }
+}
+
+// ip plus
+@mixin m-767 {
+    @media screen and (max-width: 767px) {
+        @content
+    }
+}
+
+// ip6 7
+@mixin m-413 {
+    @media screen and (max-width: 413px) {
+        @content
+    }
+}
+
+// ip5
+@mixin m-374 {
+    @media screen and (max-width: 374px) {
+        @content
+    }
+}
+
+// pad only
+@mixin pad-only {
+    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        @content
+    }
+}
+
+// iphX
+@mixin ipX {
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+        @content
+    }
+}
+
+// Hover underline animation
+@mixin hover-underline-animation($color) {
+    display: inline-block;
+    position: relative;
+    color: $color;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $color;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    &:hover {
+        &:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+}
+
+// Disable selection
+%unselectable {
+    user-select: none;
+}
+
+// gradient-text
+@mixin gradient-text($color1, $color2) {
+    background: -webkit-linear-gradient($color1, $color2);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+// flex box mid
+@mixin flex-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// flex equal-height box
+@mixin flex-h {
+    display: flex;
+    align-items: stretch;
+}
+
+// flex row
+@mixin flex-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+// img size
+@mixin img_size($image) {
+    width: image-width("../img/#{$image}");
+    height: image-height("../img/#{$image}");
+    background: url("../img/#{$image}") no-repeat;
+}
+
+// circle
+@mixin cir($unit) {
+    width: $unit;
+    height: $unit;
+    border-radius: 100%;
+}
+
+@mixin pos-mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// full-screen
+@mixin full-screen {
+    width: 100%;
+    min-height: 100%;
+}
+
+// vertical align
+@mixin v-align($h) {
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: $h;
+    }
+}

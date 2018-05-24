@@ -1,0 +1,238 @@
+.product {
+    padding-top: 160px;
+    @include m-767 {
+        padding-top: 60px;
+    }
+    .ytm {
+        width: 88px;
+        margin-right: 5px;
+        @include m-767 {
+            width: 70px;
+            margin-right: 8px;
+        }
+        @include m-374 {
+            width: 55px;
+        }
+    }
+    .lin-cir {
+        width: 171px;
+        right: 0;
+        bottom: -11px;
+        @include m-767 {
+            width: 140px;
+            right: 28px;
+            bottom: -5px;
+        }
+        @include m-374 {
+            width: 100px;
+            right: 28px;
+            bottom: -3px;
+        }
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 40px;
+        @include m-767 {
+            flex-direction: column;
+        }
+        @include m-374 {
+            margin-top: 20px;
+        }
+    }
+    .item {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 30px;
+        text-align: left;
+        @include m-767 {
+            width: 85%;
+            margin: 20px auto;
+        }
+    }
+    .icon1 {
+        width: 37px;
+        top: -3px;
+        right: -47px;
+    }
+    .icon2 {
+        width: 29px;
+        top: 3px;
+        right: -39px;
+    }
+    .icon3 {
+        width: 28px;
+        top: -3px;
+        right: -38px;
+    }
+    .tt {
+        font-size: 2rem;
+        font-weight: bold;
+        @include margin(20px null 10px null);
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 1.73;
+        letter-spacing: 1.5px;
+        @extend %txt_justify;
+        margin-bottom: 40px;
+        @include m-767 {
+            margin-bottom: 20px;
+        }
+        @include m-374 {
+            font-size: 1.4rem;
+        }
+        &.cheese {
+            margin-bottom: 13px;
+            @include m-767 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .price {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    .line-red {
+        @include m-767 {
+            width: 90%;
+            left: 5%;
+            height: 10px;
+            bottom: 2px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+.exclusive {
+    span {
+        font-weight: normal;
+        span {
+            font-weight: normal;
+        }
+    }
+    .red {
+        font-weight: bold;
+    }
+}
+
+.org {
+    color: #a9a9a9;
+    font-size: 1.5rem;
+    display: block;
+    text-decoration: line-through;
+}
+
+.tape1,
+.tape2 {
+    width: 100px;
+}
+
+.tape1 {
+    top: -12px;
+    left: -27px;
+}
+
+.tape2 {
+    bottom: -12px;
+    right: -27px;
+}
+
+.gift {
+    margin-top: 185px;
+    margin-bottom: 250px;
+    @include m-767 {
+        margin: 60px auto;
+    }
+    h2,
+    p {
+        text-align: left;
+        @include m-767 {
+            text-align: center;
+        }
+        span {
+            display: block;
+        }
+    }
+    p {
+        @include m-767 {
+            margin-top: 10px;
+        }
+    }
+}
+
+.gift-bag {
+    width: 290px;
+    left: -320px;
+    top: -112px;
+    @include m-1024 {
+        width: 200px;
+        left: -240px;
+        top: -40px;
+    }
+    @include m-767 {
+        width: 58%;
+        position: inherit;
+        left: auto;
+        top: auto;
+        margin: auto;
+    }
+}
+
+.leaf1 {
+    width: 35px;
+    right: -7px;
+    bottom: -3px;
+    @include m-767 {
+        width: 25px;
+    }
+}
+
+.leaf2 {
+    width: 38px;
+    top: 20px;
+    left: 0;
+    @include m-767 {
+        width: 30px;
+        top: auto;
+        bottom: 0;
+    }
+}
+
+.gift-bird {
+    display: none;
+    @include m-767 {
+        display: block;
+        width: 150px;
+        top: 0;
+        right: -125px;
+    }
+}
+
+.couple {
+    width: 285px;
+    top: -118px;
+    right: -236px;
+    @include m-1024 {
+        width: 230px;
+        top: -75px;
+        right: -201px;
+    }
+}
+
+.tt-gift {
+    width: 42px;
+    top: -15px;
+    right: 80px;
+    transform: rotate(-18deg);
+    @include m-767 {
+        transform: rotate(18deg);
+        top: -13px;
+        right: 36px;
+        width: 30px;
+    }
+}

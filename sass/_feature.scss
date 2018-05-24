@@ -1,0 +1,101 @@
+.feature {
+    margin-bottom: 165px;
+    @include m-767 {
+        margin-bottom: 50px;
+    }
+    .line-red {
+        width: 108%;
+        left: -4%;
+    }
+    .deco {
+        display: none;
+        @include m-767 {
+            display: block;
+            width: 27px;
+            top: -7px;
+            right: -22px;
+        }
+    }
+    ul {
+        margin-top: 90px;
+        @include m-767 {
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+    }
+    li {
+        width: 180px;
+        margin: 0 24px;
+        @include m-767 {
+            width: 50%;
+            margin: 20px auto;
+        }
+        &:not(:last-child) {
+            position: relative;
+            &:after {
+                content: '';
+                width: 8px;
+                height: 100%;
+                background: url(../img/menu-bor2.png);
+                position: absolute;
+                top: 0;
+                right: -30px;
+                @include m-767 {
+                    right: -4px;
+                }
+            }
+        }
+        &:nth-child(2) {
+            &:after {
+                @include m-767 {
+                    display: none;
+                }
+            }
+        }
+    }
+    .icon {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        height: 98px;
+    }
+    .tt {
+        display: block;
+        font-size: 2rem;
+        margin: 10px 0 5px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .txt {
+        font-size: 1.5rem;
+        @include m-767 {
+            font-size: 1.4rem;
+        }
+        span {
+            display: block;
+            span {
+                display: inline-block;
+            }
+        }
+    }
+    .bag {
+        .icon {
+            width: 100px;
+        }
+    }
+    .cake {
+        .icon {
+            width: 116px;
+        }
+    }
+    .pay {
+        .icon {
+            width: 93px;
+        }
+    }
+    .buy {
+        .icon {
+            width: 91px;
+        }
+    }
+}

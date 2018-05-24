@@ -1,0 +1,92 @@
+$bur_w:42px;
+$bur_w_s:30px;
+$bur_h:5px;
+$bur_h_s:3px;
+$color:#000;
+.burBox {
+    @include media-min(1025px) {
+        display: none;
+    }
+}
+
+a.bur {
+    cursor: pointer;
+    padding: 9px 0 14px;
+    width: $bur_w;
+    display: block;
+    vertical-align: middle;
+    @media screen and (max-width: 767px) {
+        width: $bur_w_s;
+        padding: 9px 0;
+    }
+    span {
+        position: relative;
+        display: block;
+        width: $bur_w;
+        height: $bur_h;
+        background: $color;
+        transition: all .2s ease-in-out;
+        border-radius: 2px;
+        @media screen and (max-width: 767px) {
+            width: $bur_w_s;
+            height: $bur_h_s;
+            border-radius: $bur_h_s;
+        }
+        &:before,
+        &:after {
+            border-radius: 2px;
+            position: absolute;
+            background: $color;
+            content: '';
+            height: $bur_h;
+            transition: all .2s ease-in-out;
+            right: 0;
+            width: $bur_w;
+            @media screen and (max-width: 767px) {
+                width: $bur_w_s;
+                height: $bur_h_s;
+            }
+        }
+        &:before {
+            top: -12px;
+            @media screen and (max-width: 767px) {
+                top: -9px;
+            }
+        }
+        &:after {
+            top: 12px;
+            @media screen and (max-width: 767px) {
+                top: 9px;
+            }
+        }
+    }
+}
+
+.burBox {
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 10;
+    a.active {
+        padding: 9px 0 16px; // @media screen and (max-width: 767px) {
+        //     padding: 14px 0 16px;
+        // }
+        span {
+            background: transparent;
+            &:before {
+                transform: rotate(45deg) translate(5px, 6px);
+                background: $color;
+                top: -3px;
+                @media screen and (max-width: 767px) {
+                    top: -6px;
+                }
+            }
+            &:after {
+                transform: rotate(-45deg) translate(5px, -6px);
+                background: $color;
+            }
+        }
+    }
+}

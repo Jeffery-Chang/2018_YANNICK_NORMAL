@@ -1,0 +1,165 @@
+.card {
+    padding: 80px 0;
+    background: url(../img/bg-cake.png) no-repeat left bottom, #e4e5e7;
+    transition: all .3s ease;
+    @include media(1680px) {
+        background-position: 35% bottom;
+    }
+    @include media(1360px) {
+        background-size: 95%;
+        background-position: 0 bottom;
+    }
+    @include media(1200px) {
+        background-size: 98%;
+        background-position: -100px bottom;
+    }
+    @include m-767 {
+        padding: 60px 0 160px;
+        background: url(../img/bg-cake-m.png) no-repeat left bottom, #e4e5e7;
+        background-size: contain;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+        padding-left: 55px;
+        @include m-767 {
+            padding-left: 0;
+            flex-direction: column-reverse;
+        }
+    }
+    .wording {
+        margin-top: 66px;
+        text-align: left;
+        @include m-767 {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+    li {
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        &:first-child {
+            font-size: 1.6rem;
+            letter-spacing: 1.6px;
+            @include m-767 {
+                font-size: 1.4rem;
+            }
+            span {
+                &:last-child {
+                    padding: 2px 7px;
+                    border: 1px solid black;
+                    @include margin(22px null null 28px);
+                    @include m-767 {
+                        @include margin(22px null null 20px);
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            margin-top: 15px;
+        }
+        &:nth-child(3) {
+            font-size: 1.3rem;
+            letter-spacing: 1.3px;
+        }
+    }
+    h3 {
+        span {
+            @include m-767 {
+                display: block;
+            }
+        }
+        .none-m {
+            @include m-767 {
+                display: none;
+            }
+        }
+    }
+}
+
+.card-logo {
+    width: 162px;
+    @include m-767 {
+        width: 125px;
+    }
+}
+
+.cardBox {
+    width: 255px;
+    margin-left: 33px;
+    @include m-767 {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.banklogo {
+    width: 95px;
+    margin: 0 8px;
+}
+
+.btnBox {
+    @include m-767 {
+        width: 92%;
+        margin: 30px auto;
+    }
+    a {
+        @include m-767 {
+            width: 48%;
+        }
+        &:first-child {
+            margin-right: 25px;
+            @include m-767 {
+                margin-right: 4%;
+            }
+        }
+    }
+}
+
+.cup {
+    width: 40px;
+    right: -55px;
+    top: -50px;
+    @include m-767 {
+        width: 34px;
+        right: 45px;
+        top: -66px;
+    }
+    @include m-374 {
+        width: 30px;
+        right: 37px;
+        top: -58px;
+    }
+}
+
+.card-star1,
+.card-star2,
+.card-star3 {
+    @include media-min(768px) {
+        display: none;
+    }
+}
+
+.card-star1 {
+    width: 17px;
+    top: 97px;
+    left: -41px;
+}
+
+.card-star2 {
+    width: 28px;
+    top: 114px;
+    left: -26px;
+}
+
+.card-star3 {
+    width: 14px;
+    top: 26px;
+    right: 4px;
+}

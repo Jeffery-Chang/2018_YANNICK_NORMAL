@@ -1,0 +1,394 @@
+extends ./include/layout
+include ./include/mixin
+block content
+	// fixed btn go
+	a.btn-go(href="#") 最新優惠
+	// m menu btn
+	//add '.open-btn' when open header
+	a.menu-btn(href="#")
+	//kv
+	section.kv
+		h1
+			span 
+				span.por 亞尼克歡慶
+					span.b3.abs
+						+png('b3')
+				span.year
+					+png('18')
+				span 週年
+			span
+				span.por 
+					span.ytm
+						+png('ytm')
+					span 進駐
+					span.b1.abs
+						+png('b1')
+				span.line-cir
+					span 台北捷運站
+					span.b2.abs
+						+png('b2')
+		.flagBox.abs
+			.flag-l
+				+png('flag-l')
+			.flag-r
+				+png('flag-r')
+		.main
+			.left-kv
+				.inner
+					.mrtBox.abs
+						.mrt
+							+png('mrt')
+						.line-kv-l
+							+png('line-kv-l')
+					.machine-kv.abs
+						+png('machine')
+					.couple-kv.abs
+						+png('couple')
+			.right-kv
+				.inner
+					.gateBox.abs
+						.gate
+							+png('gate')
+						.line-kv-r
+							+png('line-kv-r')
+					.ytm-logo.abs
+						ul
+							li 
+								+png('YTM-CI')
+							li 未來商店便利服務
+							li Yannick To Go Machine
+					.mom.abs
+						+png('mom')
+					.dad.abs
+						+png('dad')
+	// header
+	//pc-add '.scrolled'
+	//m-add '.open-header'
+	header
+		ul
+			li
+				a(href="#").active
+					span.icon.cake
+						+png('menu-1')
+					span 開幕送冠軍生乳捲
+			li
+				a(href="#")
+					span.icon
+						+png('menu-2')
+					span YTM 限定優惠
+			li
+				a(href="#")
+					span.icon
+						+png('menu-3')
+					span 官網訂購 2hrs 提領
+			li
+				a(href="#")
+					span.icon
+						+png('menu-4')
+					span YTM 特色服務
+	//video
+	section.video
+		h2
+			span.por 天天都是值得分享小事
+				span.fork.abs
+					+png('fork')
+			span.break-m.por 的大日子
+				span.knife.abs
+					+png('knife')
+				span.heart.abs.none-m
+					+png('love')
+		.sub 
+			span 捷運隨時提領，
+			span.ytm
+				+png('ytm')
+			span 讓分享變得更簡單
+		.videoBox.por
+			a(href="#").por
+				.icon-play.abs
+					+svg('play')
+				.pic
+					+jpg('video')
+			.girl.abs.none-m
+				+png('girls')
+			.bird.abs.none-m
+				+png('bird')
+	//card
+	section.card
+		h2 週年慶限定活動
+		h3
+			span 亞尼克『隨享卡』辦卡、儲值2000
+			span.none-m , 
+			span.red.por 送亞尼克生乳捲(原味)乙條
+				span.cup.abs
+					+png('cup')
+		.main
+			.wording
+				ul
+					li
+						span.card-logo
+							+svg('card-logo')
+						span 線上虛擬卡
+					li 隨時分享 儲存你的幸福
+					li.red
+						span 本卡由
+						span.banklogo
+							+png('banklogo')
+						span 信託管理
+			.cardBox.por
+				.card-pic
+					+png('card')
+				.card-star1.abs
+					+svg('star1')
+				.card-star2.abs
+					+svg('star2')
+				.card-star3.abs
+					+svg('star3')
+
+		.btnBox
+			a(href="#" data-text="線上申辦/儲值").btn 線上申辦/儲值
+			a(href="#" data-text="儲值$2,000送1條").btn 儲值$2,000送1條
+	//product
+	section.product
+		h2 
+			span.por
+				span.ytm 
+					+png('ytm')
+				span 限定口味、當季新品
+				span.none-m 、
+				span 團購冠軍生乳捲熱銷進站
+				span.line-red.abs
+					+png('line-red')
+				span.lin-cir.abs
+					+png('line-cir')
+		.main
+			.item
+				.picBox.por
+					.pic
+						+jpg("pic1")
+					.tape1.abs.none-m
+						+png('tape')
+				.tt 
+					span.por 生乳捲-北海道起司
+						span.icon1.abs
+							+png('menu-2')
+				p.cheese 意想不到的起司質感!找到兩種 起司與北海道奶霜融合的絕佳比 例，可以同時享受起司濃厚稠密 的口感與細緻爽口的奶霜質地， 冰涼微酸比優格更加迷人。
+				.price.red $420
+			.item
+				.pic
+					+jpg("pic2")
+				.tt 
+					span.por 生乳捲-荔枝好芒
+						span.icon2.abs
+							+png('new')
+				p 將北海道奶霜融入浸泡多 時的茶葉後打發，茶香更 顯醇厚迷人，溫潤甘甜的 茶香滋味與入口即化的奶 霜質感，清爽裡洋溢著耐 人尋味的餘韻。
+				.price.exclusive
+					span.org 原價 $450
+					sapn
+						span YTM 獨家 
+						span.red $399
+			.item
+				.picBox.por
+					.pic
+						+jpg("pic3")
+					.tape2.abs.none-m
+						+png('tape')
+				.tt 
+					span.por 生乳捲-原味
+						span.icon3.abs
+							+png('crown')
+				p 來自北海道的乳源，搭配 上昭和蛋糕專用麵粉製成 的蛋糕， 一口咬下感受奶霜入口即化的輕盈口感。 一口咬下感受奶霜入口即化的輕盈口感。
+				.price.red $380
+		.gift.flex-mid
+			.giftInfo.por
+				h2 
+					span.por 購買生乳捲
+						span.tt-gift.abs
+							+svg('gift')
+					span.red 即贈『生乳捲輕巧袋』
+				p 
+					span YTM 生乳捲每日新鮮配送冷藏。
+					span 購買時我們將隨包裝附贈『生乳捲輕巧袋』 
+					span 方便您提領後放入保冷劑， 
+					span 以維持生乳捲最新鮮狀態。
+				.gift-bag.abs
+					.inner
+						.bag
+							+png('gift-bag')
+						.leaf1.abs
+							+png('leaf1')
+						.leaf2.abs
+							+png('leaf2')
+						.gift-bird.abs
+							+png('bird')
+				.couple.abs.none-m
+					+png('couple')
+	//ytm info
+	section.ytmInfo
+		.deco.abs
+			+png('app')
+		h2
+			span.por
+				span.ytm
+					+png('ytm')
+				span 蛋糕提領站 
+				span.break-m 智慧購物新體驗
+				span.line-red.abs
+					+png('line-m-1')
+		.main.flex-mid
+			.item.por
+				ul
+					li 『線上訂 線下取 查詢庫存 即時方便』
+					li
+						span 不論您是直接購買、訂單取貨，
+						span 或會員隨享卡提領，都能輕易上手
+					li
+						a.videoBox.por(href="#")
+							span.pic
+								+jpg('video')
+							span.icon-play
+								+svg('play')
+					li.red
+						span.por.line-cir 購買流程簡單方便
+			.item
+				ul
+					li 『不偷工 不減料 新鮮製作 新鮮販售』
+					li
+						span 亞尼克重視食品安全與衛生，
+						span 高規格的維護 SOP 將確保產品新鮮供應
+					li
+						a.videoBox.por(href="#")
+							span.pic
+								+jpg('video')
+							span.icon-play
+								+svg('play')
+					li.red
+						span.por.line-cir 定時維護安全衛生
+	//ytm feature
+	section.feature
+		h2
+			span.por
+				span.ytm
+					+png('ytm')
+				span 服務特色
+				span.line-red.abs
+					+png('line-m-2')
+				span.deco.abs
+					+png('tt-hightline')
+		ul.flex-mid
+			li.bag
+				span.icon
+					+png('bag')
+				span.tt 購買便利
+				span.txt
+					span 據點更多
+					span 站內不打烊
+			li.cake
+				span.icon
+					+png('cake')
+				span.tt 新鮮衛生
+				span.txt
+					span 高規格品管
+					span 安全清潔
+			li.pay
+				span.icon
+					+png('mrt-card')
+				span.tt 多元支付
+				span.txt
+					span 免現金
+					span 支援隨享卡/悠遊卡/
+						span.break-m 信用卡
+			li.buy
+				span.icon
+					+png('coin')
+				span.tt 團購模式
+				span.txt
+					span 線上寄捲
+					span 大量購買提領更優惠!
+	//location
+	section.location
+		h2
+			span.por.ttBox
+				span.ytm
+					+png('ytm')
+				span 捷運據點
+				span.line-red.abs
+					+png('line-m-1')
+				span.deco.abs
+					+png('tt-hightline2')
+		.main
+			.redBox
+			.mrt-line
+				ul
+					li
+						.tt.por 板南線
+						p 
+							span.red 南港展覽館
+							| 、南港、後山埤、永春、市政府、國父紀念館、
+							span.red 忠孝敦化
+							|、
+							span.red 忠孝復興
+							| 、忠孝新生、善導寺、龍山寺、 江子翠、新埔、板橋、府中、海山、永寧
+					li
+						.tt.por 文湖線
+						p 中山國中、科技大樓、港墘
+					li
+						.tt.por 淡水信義線
+						p 北投、石牌、士林、劍潭、圓山、
+							span.red 民權西路
+							| 、雙連、
+							span.red 中山
+							| 、
+							span.red 台北車站
+							| 、台大醫院、
+							span.red 中正紀念堂
+							| 、
+							span.red 東門
+							| 、
+							span.red 大安
+							| 、信義安和、台北 101/世貿
+					li
+						.tt.por 松山新店線
+						p 松山、南京三民、台北小巨蛋、
+							span.red 南京復興
+							| 、北門、公館、景美
+					li
+						.tt.por 中和新蘆線
+						p
+							span.red 松江南京
+							| 、行天宮、頂溪、
+							span.red 古亭
+							| 、永安市場、南勢角、 三重國小、三和國中、徐匯中學、三民高中、蘆洲、新莊
+			.machineBox.por
+				.machine
+					+png('machine2')
+				.star1.abs
+					+svg('star1')
+				.star2.abs
+					+svg('star2')
+				.star3.abs
+					+svg('star3')
+		a(href="#" data-text="線上捷運地圖").btn 線上捷運地圖
+	//footer
+	footer
+		.main.flex-mid.por
+			.mrt-cart.abs
+				+png('footer-mrt')
+			.left.flex-mid
+				a.footer-logo(href="#")
+					+svg('logo')
+				ul
+					li 亞尼克誠摯歡迎您蒞臨體驗!
+					li 如有任何疑問，請撥打客服專線 (02) 2659-6442 
+					li 服務時間:週一至週日，6:00 ~ 24:00
+			.right.none-m
+				.social
+					span Follow us
+					span
+					a(href="#").fb
+						+svg('fb') 
+					a(href="#").ig
+						+svg('ig') 
+					a(href="#").line
+						+svg('line') 
+				p © 2018 亞尼克購物商城 All Rights Reserved
+

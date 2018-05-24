@@ -1,0 +1,117 @@
+.ytmInfo {
+    margin-bottom: 180px;
+    @include m-767 {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+    .main {
+        margin-top: 85px;
+        @include m-767 {
+            flex-direction: column;
+            margin-top: 10px;
+        }
+    }
+    .item {
+        width: 400px;
+        margin: 0 34px;
+        @include m-767 {
+            width: 85%;
+            margin: 20px auto 30px;
+        }
+        &:first-child {
+            &:after {
+                content: '';
+                width: 8px;
+                height: 90%;
+                background: url(../img/menu-bor2.png);
+                position: absolute;
+                top: 0;
+                right: -38px;
+            }
+        }
+    }
+    li {
+        &:first-child {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            @include m-767 {
+                font-size: 1.7rem;
+            }
+            @include m-413 {
+                font-size: 1.6rem;
+            }
+            @include m-374 {
+                font-size: 1.4rem;
+            }
+        }
+        &:nth-child(2) {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            letter-spacing: 1.5px;
+            margin-bottom: 25px;
+            @include m-767 {
+                margin-bottom: 15px;
+            }
+            @include m-374 {
+                font-size: 1.4rem;
+            }
+            span {
+                display: block;
+            }
+        }
+        &:nth-child(4) {
+            font-size: 2rem;
+            margin-top: 12px;
+        }
+    }
+    .line-cir:after {
+        bottom: -22px;
+        background-size: cover;
+        @include m-767 {
+            bottom: -15px;
+            height: 14px;
+        }
+    }
+    .videoBox {
+        display: block;
+        width: 100%;
+        @include hover {
+            .pic {
+                filter: brightness(100%);
+            }
+        }
+    }
+    .pic {
+        display: block;
+    }
+    .deco {
+        width: 300px;
+        top: -28px;
+        left: 14%;
+        @include media(1725px) {
+            left: 9%;
+        }
+        @include media(1480px) {
+            left: 3%;
+        }
+        @include media(1360px) {
+            width: 255px;
+        }
+        @include media(1200px) {
+            display: none;
+        }
+        @include m-767 {
+            display: block;
+            position: inherit;
+            margin: auto;
+            width: 50%;
+        }
+    }
+    .line-red {
+        // @include m-767 {
+        //     width: 60%;
+        //     left: 20%;
+        // }
+    }
+}
