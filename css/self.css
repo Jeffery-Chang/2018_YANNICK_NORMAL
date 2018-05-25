@@ -1,55 +1,34 @@
-/*
-footer .mrt-cart{
-    animation: trans 6s cubic-bezier(0.715, -0.120, 0.415, 1.055) infinite;
-}
-@media screen and (max-width: 767px) {
-    animation: trans_767 6s cubic-bezier(0.715, -0.120, 0.415, 1.055) infinite;
-}
-@keyframes trans{
-    0% {
-        opacity: 1;
-        left: -20%;
+@media screen and (min-width: 768px) {
+    .menu_header {
+        position: relative;
     }
-    45% {
-        opacity: 1;
-        left: 120%;
+    .menu_header .header_hide {
+        height: 120px;
     }
-    45.5%{
-        opacity: 0;
-    }
-    46% {
-        opacity: 0;
-        left: -50%;
-    }
-    46.5%{
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-        left: -20%;
+    header {
+        position: absolute;
+        top: 0;
     }
 }
-@keyframes trans{
-    0% {
-        opacity: 1;
-        left: -100%;
-    }
-    45% {
-        opacity: 1;
-        left: 120%;
-    }
-    45.5%{
-        opacity: 0;
-    }
-    46% {
-        opacity: 0;
-        left: -100%;
-    }
-    46.5%{
-        opacity: 1;
-    }
-    80% {
-        opacity: 1;
-        left: -100%;
-    }
-}*/
+
+.lightbox {
+    display: none;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

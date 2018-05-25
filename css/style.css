@@ -614,6 +614,43 @@ a {
 ul {
   font-size: 0; }
 
+.lightbox {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50; }
+  .lightbox .container {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    @media screen and (max-width: 767px) {
+      .lightbox .container {
+        width: 100%; } }
+  .lightbox .close-btn {
+    width: 60px;
+    display: block;
+    right: 20px;
+    top: 20px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+    @media screen and (max-width: 767px) {
+      .lightbox .close-btn {
+        right: inherit;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 8%; } }
+    @media screen and (min-width: 1025px) {
+      .lightbox .close-btn:hover {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg); } }
+
 header {
   width: 100%;
   background: #fff;
@@ -813,9 +850,12 @@ a.bur {
         background: #000; }
 
 .kv {
-  height: 800px;
+  height: 85vh;
   padding-top: 60px;
   margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .kv {
+      min-height: 530px; } }
   @media screen and (max-height: 750px) {
     .kv {
       height: 80vh;
@@ -1039,6 +1079,10 @@ h1 {
       transform: scale(0.8);
       left: 29px;
       top: 38px; } }
+  @media screen and (max-height: 680px) {
+    .ytm-logo {
+      top: 26px;
+      left: 41px; } }
   @media screen and (max-width: 1236px) {
     .ytm-logo {
       left: 69px;
@@ -1085,6 +1129,10 @@ h1 {
       width: 375px;
       left: 38%;
       top: 24px; } }
+  @media screen and (max-height: 680px) {
+    .machine-kv {
+      top: 20px;
+      width: 350px; } }
   @media screen and (max-width: 1024px) {
     .machine-kv {
       width: 76%;
@@ -1123,6 +1171,9 @@ h1 {
       transform: scale(0.8);
       top: 93px;
       left: -115px; } }
+  @media screen and (max-height: 680px) {
+    .mom {
+      top: 80px; } }
   @media screen and (max-width: 1236px) {
     .mom {
       left: -70px; } }
@@ -1146,6 +1197,9 @@ h1 {
   @media screen and (max-height: 750px) {
     .mrtBox {
       top: 237px; } }
+  @media screen and (max-height: 680px) {
+    .mrtBox {
+      top: 190px; } }
   @media screen and (max-width: 1024px) {
     .mrtBox {
       top: 350px; } }
@@ -1208,6 +1262,9 @@ h1 {
       transform: scale(0.8);
       top: 75px;
       left: 155px; } }
+  @media screen and (max-height: 680px) {
+    .dad {
+      top: 49px; } }
   @media screen and (max-width: 1024px) {
     .dad {
       -webkit-transform: scale(0.8);
@@ -1230,6 +1287,9 @@ h1 {
   @media screen and (max-height: 750px) {
     .gateBox {
       top: 231px; } }
+  @media screen and (max-height: 680px) {
+    .gateBox {
+      top: 185px; } }
   @media screen and (max-width: 1024px) {
     .gateBox {
       top: 350px; } }
@@ -1253,7 +1313,7 @@ h1 {
   width: 100%; }
 
 .video {
-  margin-top: 185px;
+  margin-top: 155px;
   padding-bottom: 100px; }
   @media screen and (max-width: 767px) {
     .video {
@@ -1564,6 +1624,12 @@ h1 {
       .product .item {
         width: 85%;
         margin: 20px auto; } }
+  .product .picBox {
+    width: 100%;
+    height: 257px; }
+    @media screen and (max-width: 767px) {
+      .product .picBox {
+        height: auto; } }
   .product .icon1 {
     width: 37px;
     top: -3px;
