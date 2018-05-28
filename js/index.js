@@ -1,4 +1,11 @@
 (function(){
+    window.sr = ScrollReveal({
+        duration: 500,
+        distance: '50px',
+        easing: 'ease',
+        opacity: 0,
+        scale: 1
+    });
     var indexCtrl = {
         isAnimate: false,
         init(){
@@ -6,13 +13,69 @@
                 location.href = 'index_ie.html';
                 return;
             }
-            
+
             this.menuSet();
             this.transIn();
 
             $(window).on('scroll', () => {
                 this.scroll();
+            }).on('load', () => {
+                this.initKV();
             }).scroll();
+        },
+        initKV(){
+            var title = $('.kv h1, .kv .ytm-logo li');
+            var MRT = $('.kv .mrt img');
+            var machine = $('.kv .machine-kv img');
+            var family = $('.kv .mom img, .kv .dad img');
+            var gate = $('.kv .gateBox .gate');
+            var couple = $('.kv .couple-kv img');
+            // 大標
+            sr.reveal(title, {
+                origin: 'top',
+                distance: '50px',
+                delay: 500
+            }, 200);
+            // kc捷運
+            sr.reveal(MRT, {
+                origin: 'left',
+                distance: '200px',
+                easing: 'cubic-bezier(0.175, 0.885, 0.530, 1.110)',
+                duration: 450,
+                delay: 700
+            });
+            // 主機器
+            sr.reveal(machine, {
+                origin: 'bottom',
+                scale: .5,
+                distance: '50px',
+                easing: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
+                duration: 400,
+                delay: 900
+            });
+            // 一家人
+            sr.reveal(family, {
+                origin: 'right',
+                distance: '200px',
+                duration: 750,
+                delay: 1000
+            }, 750);
+            // 情侶
+            sr.reveal(couple, {
+                origin: 'right',
+                distance: '200px',
+                duration: 750,
+                delay: 1100
+            });
+            // 閘口
+            sr.reveal(gate, {
+                origin: 'bottom',
+                scale: .5,
+                distance: '50px',
+                easing: 'cubic-bezier(0.175, 0.885, 0.530, 1.110)',
+                duration: 400,
+                delay: 700
+            });
         },
         transIn(){
             window.tl = new TimelineMax({ repeat: -1, paused: true });
