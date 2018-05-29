@@ -134,7 +134,7 @@ summary {
   display: block; }
 
 html,
-body {
+body, .wrap {
   font-weight: 400; }
 
 h1 {
@@ -191,7 +191,7 @@ h6 {
   font-weight: 900;
   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff2) format("woff2"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.woff) format("woff"), url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Black.otf) format("opentype"); }
 
-.product p, .location p {
+.yannick .product p, .yannick .location p {
   text-align: justify;
   text-justify: inter-ideographic; }
 
@@ -206,37 +206,37 @@ h6 {
   -ms-flex-align: center;
   align-items: center; }
 
-section {
+.yannick section {
   width: 100%;
   position: relative; }
 
 @media screen and (max-width: 767px) {
-  .break-m {
+  .yannick .break-m {
     display: block; } }
 
 @media screen and (max-width: 767px) {
-  .none-m {
+  .yannick .none-m {
     display: none; } }
 
-.line-cir {
+.yannick .line-cir {
   position: relative; }
-  .line-cir:after {
+  .yannick .line-cir:after {
     content: '';
     width: 100%;
     height: 20px;
-    background: url(../img/tt-line.png) no-repeat;
+    background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_912722849152018052528.png) no-repeat;
     background-size: 100%;
     position: absolute;
     bottom: -23px;
     left: 0; }
 
-.abs {
+.yannick .abs {
   position: absolute; }
 
-.btn-go {
+.yannick .btn-go {
   height: 219px;
   width: 167px;
-  background: url(../img/go.png) no-repeat center bottom;
+  background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_667835839152018052558.png) no-repeat center bottom;
   background-size: contain;
   display: block;
   position: fixed;
@@ -251,21 +251,21 @@ section {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   @media screen and (max-width: 1440px) {
-    .btn-go {
+    .yannick .btn-go {
       -webkit-transform: scale(0.8);
       transform: scale(0.8); } }
   @media screen and (max-width: 1200px) {
-    .btn-go {
+    .yannick .btn-go {
       right: 0;
       -webkit-transform: scale(0.7);
       transform: scale(0.7); } }
   @media screen and (max-width: 1024px) {
-    .btn-go {
+    .yannick .btn-go {
       -webkit-transform: scale(0.6);
       transform: scale(0.6);
       top: 120px; } }
   @media screen and (max-width: 767px) {
-    .btn-go {
+    .yannick .btn-go {
       -webkit-transform: scale(0.6);
       transform: scale(0.6);
       top: inherit;
@@ -275,73 +275,73 @@ section {
       height: 157px;
       background-size: 100%; } }
   @media screen and (max-width: 374px) {
-    .btn-go {
+    .yannick .btn-go {
       -webkit-transform: scale(0.4);
       transform: scale(0.4);
       right: -37px; } }
 
-h2 {
+.yannick h2 {
   font-size: 38px;
   font-size: 3.8rem;
   letter-spacing: 3.8px;
   position: relative; }
   @media screen and (max-width: 767px) {
-    h2 {
+    .yannick h2 {
       font-size: 3rem;
       letter-spacing: 3px; } }
   @media screen and (max-width: 413px) {
-    h2 {
+    .yannick h2 {
       font-size: 2.6rem;
       letter-spacing: 2.6px; } }
   @media screen and (max-width: 374px) {
-    h2 {
+    .yannick h2 {
       font-size: 2.2rem;
       letter-spacing: 2.2px; } }
-  h2 span {
+  .yannick h2 span {
     display: inline-block;
     vertical-align: middle; }
-  h2 .ytm {
+  .yannick h2 .ytm {
     width: 93px;
     margin-right: 10px; }
     @media screen and (max-width: 767px) {
-      h2 .ytm {
+      .yannick h2 .ytm {
         width: 65px; } }
     @media screen and (max-width: 374px) {
-      h2 .ytm {
+      .yannick h2 .ytm {
         width: 46px;
         margin-right: 5px; } }
 
-.sub {
+.yannick .sub {
   font-size: 24px;
   font-size: 2.4rem;
   letter-spacing: 2.4px;
   margin-bottom: 35px; }
   @media screen and (max-width: 767px) {
-    .sub {
+    .yannick .sub {
       font-size: 1.8rem;
       letter-spacing: 1.8px;
       margin-top: 10px;
       margin-bottom: 13px; } }
   @media screen and (max-width: 413px) {
-    .sub {
+    .yannick .sub {
       font-size: 1.6rem;
       letter-spacing: 1.6px;
       margin-top: 10px;
       margin-bottom: 15px; } }
-  .sub span {
+  .yannick .sub span {
     display: inline-block;
     letter-spacing: 2.4px; }
-  .sub .ytm {
+  .yannick .sub .ytm {
     width: 70px;
     margin-right: 7px; }
     @media screen and (max-width: 767px) {
-      .sub .ytm {
+      .yannick .sub .ytm {
         width: 45px; } }
     @media screen and (max-width: 413px) {
-      .sub .ytm {
+      .yannick .sub .ytm {
         width: 40px; } }
 
-.icon-play {
+.yannick .icon-play {
   width: 85px;
   position: absolute;
   top: 50%;
@@ -350,25 +350,25 @@ h2 {
   transform: translate(-50%, -50%);
   z-index: 1; }
   @media screen and (max-width: 767px) {
-    .icon-play {
+    .yannick .icon-play {
       width: 70px; } }
 
-.red {
+.yannick .red {
   color: #e10012; }
 
-h3 {
+.yannick h3 {
   font-size: 24px;
   font-size: 2.4rem;
   letter-spacing: 2.4px;
   position: relative; }
   @media screen and (max-width: 767px) {
-    h3 {
+    .yannick h3 {
       font-size: 1.8rem; } }
   @media screen and (max-width: 374px) {
-    h3 {
+    .yannick h3 {
       font-size: 1.6rem; } }
 
-.btn {
+.yannick .btn {
   width: 270px;
   height: 70px;
   line-height: 70px;
@@ -383,25 +383,25 @@ h3 {
   -webkit-transition: 0.35s ease all;
   transition: 0.35s ease all; }
   @media screen and (min-width: 1025px) {
-    .btn:hover {
+    .yannick .btn:hover {
       line-height: 9em;
       background: black; } }
   @media screen and (max-width: 767px) {
-    .btn {
+    .yannick .btn {
       font-size: 1.6rem;
       height: 60px;
       line-height: 60px; } }
   @media screen and (max-width: 374px) {
-    .btn {
+    .yannick .btn {
       font-size: 1.4rem;
       height: 50px;
       line-height: 50px; } }
-  .btn:before {
+  .yannick .btn:before {
     content: attr(data-text);
     position: absolute;
     top: -2.75em; }
 
-.line-red {
+.yannick .line-red {
   width: 100%;
   bottom: 0;
   left: 0;
@@ -593,6 +593,26 @@ body {
     body {
       min-width: 1024px; } }
 
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  line-height: 1.5;
+  text-align: center;
+  color: black;
+  font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif;
+  min-width: 314px;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0; }
+  @media screen and (min-width: 768px) {
+    .wrap {
+      min-width: 1024px; } }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -614,7 +634,7 @@ a {
 ul {
   font-size: 0; }
 
-.lightbox {
+.yannick .lightbox {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, .9);
@@ -622,7 +642,7 @@ ul {
   top: 0;
   left: 0;
   z-index: 50; }
-  .lightbox .container {
+  .yannick .lightbox .container {
     width: 60%;
     position: absolute;
     top: 50%;
@@ -630,9 +650,9 @@ ul {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
     @media screen and (max-width: 767px) {
-      .lightbox .container {
+      .yannick .lightbox .container {
         width: 100%; } }
-  .lightbox .close-btn {
+  .yannick .lightbox .close-btn {
     width: 60px;
     display: block;
     right: 20px;
@@ -640,23 +660,23 @@ ul {
     -webkit-transition: .3s ease;
     transition: .3s ease; }
     @media screen and (max-width: 767px) {
-      .lightbox .close-btn {
+      .yannick .lightbox .close-btn {
         right: inherit;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         top: 8%; } }
     @media screen and (min-width: 1025px) {
-      .lightbox .close-btn:hover {
+      .yannick .lightbox .close-btn:hover {
         -webkit-transform: rotate(90deg);
         transform: rotate(90deg); } }
 
-header {
+.yannick header {
   width: 100%;
   background: #fff;
   padding: 15px; }
   @media screen and (max-width: 767px) {
-    header {
+    .yannick header {
       position: fixed;
       height: 100vh;
       background: #e10012;
@@ -672,7 +692,7 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
-  header ul {
+  .yannick header ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -680,20 +700,20 @@ header {
     -ms-flex-pack: center;
     justify-content: center; }
     @media screen and (max-width: 767px) {
-      header ul {
+      .yannick header ul {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
         padding-bottom: 80px; } }
-  header li {
+  .yannick header li {
     width: 230px;
     position: relative; }
     @media screen and (max-width: 767px) {
-      header li {
+      .yannick header li {
         width: 100%;
         margin: 25px auto; } }
-    header li:not(:last-child):after {
+    .yannick header li:not(:last-child):after {
       content: '';
       width: 8px;
       height: 100%;
@@ -704,7 +724,7 @@ header {
       top: 0;
       display: block; }
       @media screen and (max-width: 767px) {
-        header li:not(:last-child):after {
+        .yannick header li:not(:last-child):after {
           background: none;
           border-bottom: 2px dashed rgba(255, 255, 255, 0.4902);
           right: inherit;
@@ -713,7 +733,7 @@ header {
           top: 25px;
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%); } }
-  header a {
+  .yannick header a {
     color: black;
     font-size: 15px;
     font-size: 1.5rem;
@@ -721,34 +741,35 @@ header {
     transition: -webkit-transform .3s ease;
     transition: transform .3s ease;
     transition: transform .3s ease, -webkit-transform .3s ease; }
-    header a span {
+    .yannick header a span {
       display: block; }
     @media screen and (min-width: 1025px) {
-      header a:hover {
+      .yannick header a:hover {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
         color: #e10012; } }
     @media screen and (max-width: 767px) {
-      header a {
+      .yannick header a {
         color: white;
         font-size: 1.8rem;
         font-weight: 500; } }
-  header .icon {
+  .yannick header .icon {
     display: inline-block;
     margin-bottom: 5px; }
-    header .icon img {
+    .yannick header .icon img {
       height: 53px; }
     @media screen and (max-width: 767px) {
-      header .icon {
+      .yannick header .icon {
         display: none; } }
 
-.scrolled {
+.yannick .scrolled {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 20;
   border-bottom: 5px solid #e10012; }
 
-.menu-btn {
+.yannick .menu-btn {
   width: 23px;
   height: 27vh;
   background: url(../asset/svg/menu.svg) no-repeat;
@@ -760,32 +781,32 @@ header {
   transform: translateY(-50%);
   z-index: 11; }
   @media screen and (min-width: 768px) {
-    .menu-btn {
+    .yannick .menu-btn {
       display: none; } }
 
-.open-header {
+.yannick .open-header {
   left: 0; }
 
-.open-btn {
+.yannick .open-btn {
   background: url(../asset/svg/menu-close.svg) no-repeat right center;
   left: inherit;
   right: 0; }
 
 @media screen and (min-width: 1025px) {
-  .burBox {
+  .yannick .burBox {
     display: none; } }
 
-a.bur {
+.yannick a.bur {
   cursor: pointer;
   padding: 9px 0 14px;
   width: 42px;
   display: block;
   vertical-align: middle; }
   @media screen and (max-width: 767px) {
-    a.bur {
+    .yannick a.bur {
       width: 30px;
       padding: 9px 0; } }
-  a.bur span {
+  .yannick a.bur span {
     position: relative;
     display: block;
     width: 42px;
@@ -795,11 +816,11 @@ a.bur {
     transition: all .2s ease-in-out;
     border-radius: 2px; }
     @media screen and (max-width: 767px) {
-      a.bur span {
+      .yannick a.bur span {
         width: 30px;
         height: 3px;
         border-radius: 3px; } }
-    a.bur span:before, a.bur span:after {
+    .yannick a.bur span:before, .yannick a.bur span:after {
       border-radius: 2px;
       position: absolute;
       background: #000;
@@ -810,21 +831,21 @@ a.bur {
       right: 0;
       width: 42px; }
       @media screen and (max-width: 767px) {
-        a.bur span:before, a.bur span:after {
+        .yannick a.bur span:before, .yannick a.bur span:after {
           width: 30px;
           height: 3px; } }
-    a.bur span:before {
+    .yannick a.bur span:before {
       top: -12px; }
       @media screen and (max-width: 767px) {
-        a.bur span:before {
+        .yannick a.bur span:before {
           top: -9px; } }
-    a.bur span:after {
+    .yannick a.bur span:after {
       top: 12px; }
       @media screen and (max-width: 767px) {
-        a.bur span:after {
+        .yannick a.bur span:after {
           top: 9px; } }
 
-.burBox {
+.yannick .burBox {
   height: 30px;
   position: absolute;
   top: 50%;
@@ -832,53 +853,53 @@ a.bur {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 10; }
-  .burBox a.active {
+  .yannick .burBox a.active {
     padding: 9px 0 16px; }
-    .burBox a.active span {
+    .yannick .burBox a.active span {
       background: transparent; }
-      .burBox a.active span:before {
+      .yannick .burBox a.active span:before {
         -webkit-transform: rotate(45deg) translate(5px, 6px);
         transform: rotate(45deg) translate(5px, 6px);
         background: #000;
         top: -3px; }
         @media screen and (max-width: 767px) {
-          .burBox a.active span:before {
+          .yannick .burBox a.active span:before {
             top: -6px; } }
-      .burBox a.active span:after {
+      .yannick .burBox a.active span:after {
         -webkit-transform: rotate(-45deg) translate(5px, -6px);
         transform: rotate(-45deg) translate(5px, -6px);
         background: #000; }
 
-.kv {
+.yannick .kv {
   height: 85vh;
   padding-top: 60px;
   margin-bottom: 20px; }
   @media screen and (min-width: 768px) {
-    .kv {
+    .yannick .kv {
       min-height: 530px; } }
   @media screen and (max-height: 750px) {
-    .kv {
+    .yannick .kv {
       height: 80vh;
       padding-top: 35px; } }
   @media screen and (max-width: 1024px) {
-    .kv {
+    .yannick .kv {
       height: 78vh;
       padding-top: 45px; } }
   @media screen and (max-width: 767px) {
-    .kv {
+    .yannick .kv {
       width: 100%;
       height: 90vh;
       padding-top: 60px; } }
   @media screen and (max-width: 374px) {
-    .kv {
+    .yannick .kv {
       padding-top: 40px; } }
-  .kv .main {
+  .yannick .kv .main {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
 
-h1 {
+.yannick h1 {
   font-size: 38px;
   font-size: 3.8rem;
   font-weight: bold;
@@ -886,440 +907,439 @@ h1 {
   letter-spacing: 3.8px;
   line-height: 0.3; }
   @media screen and (max-width: 1024px) {
-    h1 {
+    .yannick h1 {
       -webkit-transform: scale(0.9);
       transform: scale(0.9); } }
   @media screen and (max-height: 750px) {
-    h1 {
+    .yannick h1 {
       -webkit-transform: scale(0.9);
       transform: scale(0.9); } }
   @media screen and (max-width: 767px) {
-    h1 {
+    .yannick h1 {
       font-size: 3rem;
       -webkit-transform: scale(1);
       transform: scale(1);
       line-height: 1; } }
   @media screen and (max-width: 374px) {
-    h1 {
+    .yannick h1 {
       font-size: 2.2rem; } }
-  h1 > span {
+  .yannick h1 > span {
     display: block; }
-    h1 > span span {
+    .yannick h1 > span span {
       vertical-align: middle; }
-  h1 .ytm {
+  .yannick h1 .ytm {
     width: 95px;
     display: inline-block;
     margin-right: 10px;
     margin-top: 3px; }
     @media screen and (max-width: 767px) {
-      h1 .ytm {
+      .yannick h1 .ytm {
         width: 65px; } }
     @media screen and (max-width: 374px) {
-      h1 .ytm {
+      .yannick h1 .ytm {
         width: 50px;
         margin-right: 6px;
         margin-top: 1px; } }
   @media screen and (max-width: 767px) {
-    h1 .line-cir:after {
+    .yannick h1 .line-cir:after {
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
       bottom: -24px; } }
 
-.year {
+.yannick .year {
   width: 53px;
   display: inline-block;
   margin: 0 8px 14px; }
   @media screen and (max-width: 767px) {
-    .year {
+    .yannick .year {
       width: 35px;
       margin: 0 8px 0 5px; } }
   @media screen and (max-width: 374px) {
-    .year {
+    .yannick .year {
       width: 26px; } }
 
-.station {
+.yannick .station {
   font-size: 40px;
   font-size: 4rem;
   padding: 0 3px; }
   @media screen and (max-width: 767px) {
-    .station {
+    .yannick .station {
       font-size: 3.2rem; } }
   @media screen and (max-width: 374px) {
-    .station {
+    .yannick .station {
       font-size: 2.4rem; } }
 
-.inner,
-.por {
+.yannick .inner,
+.yannick .por {
   position: relative; }
 
-.flagBox {
+.yannick .flagBox {
   width: 100%;
   top: 0;
   left: 0; }
   @media screen and (min-width: 768px) {
-    .flagBox {
+    .yannick .flagBox {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; } }
-  .flagBox > div {
+  .yannick .flagBox > div {
     width: 30%; }
     @media screen and (max-width: 1024px) {
-      .flagBox > div {
+      .yannick .flagBox > div {
         width: 40%; } }
     @media screen and (max-width: 767px) {
-      .flagBox > div {
+      .yannick .flagBox > div {
         width: 106%; } }
 
 @media screen and (max-width: 767px) {
-  .flag-l {
+  .yannick .flag-l {
     display: none; } }
 
 @media screen and (min-width: 768px) {
-  .flag-r {
+  .yannick .flag-r {
     max-width: 600px; } }
 
-.b1,
-.b2,
-.b3 {
+.yannick .b1,
+.yannick .b2,
+.yannick .b3 {
   width: 35px;
   display: block; }
   @media screen and (max-width: 767px) {
-    .b1,
-    .b2,
-    .b3 {
+    .yannick .b1,
+    .yannick .b2,
+    .yannick .b3 {
       width: 30px; } }
   @media screen and (max-width: 413px) {
-    .b1,
-    .b2,
-    .b3 {
+    .yannick .b1,
+    .yannick .b2,
+    .yannick .b3 {
       width: 25px; } }
   @media screen and (max-width: 374px) {
-    .b1,
-    .b2,
-    .b3 {
+    .yannick .b1,
+    .yannick .b2,
+    .yannick .b3 {
       width: 20px; } }
 
-.b1 {
+.yannick .b1 {
   top: -36px;
   left: -162px; }
   @media screen and (max-width: 767px) {
-    .b1 {
+    .yannick .b1 {
       top: 33px;
       left: -32px; } }
   @media screen and (max-width: 413px) {
-    .b1 {
+    .yannick .b1 {
       left: -22px; } }
   @media screen and (max-width: 374px) {
-    .b1 {
+    .yannick .b1 {
       top: 30px;
       left: -28px; } }
 
-.b2 {
+.yannick .b2 {
   right: -156px;
   bottom: -76px; }
   @media screen and (max-width: 767px) {
-    .b2 {
+    .yannick .b2 {
       right: -35px;
       bottom: -62px; } }
   @media screen and (max-width: 413px) {
-    .b2 {
+    .yannick .b2 {
       right: -26px;
       bottom: -104px; } }
   @media screen and (max-width: 374px) {
-    .b2 {
+    .yannick .b2 {
       bottom: -55px;
       right: -27px; } }
 
-.b3 {
+.yannick .b3 {
   top: -20px;
   left: -55px; }
   @media screen and (max-width: 767px) {
-    .b3 {
+    .yannick .b3 {
       top: -22px;
       left: -43px; } }
   @media screen and (max-width: 413px) {
-    .b3 {
+    .yannick .b3 {
       top: -19px;
       left: -34px; } }
   @media screen and (max-width: 374px) {
-    .b3 {
+    .yannick .b3 {
       top: -8px;
       left: -32px; } }
 
-.left-kv {
+.yannick .left-kv {
   width: 45%; }
   @media screen and (max-width: 767px) {
-    .left-kv {
+    .yannick .left-kv {
       width: 100%; } }
 
-.right-kv {
+.yannick .right-kv {
   width: 55%; }
   @media screen and (max-width: 767px) {
-    .right-kv {
+    .yannick .right-kv {
       display: none; } }
 
-.ytm-logo {
+.yannick .ytm-logo {
   width: 267px;
   left: 150px;
   top: 108px;
   text-align: center; }
   @media screen and (max-width: 1440px) {
-    .ytm-logo {
+    .yannick .ytm-logo {
       left: 122px;
       top: 77px;
       -webkit-transform: scale(0.9);
       transform: scale(0.9); } }
   @media screen and (max-height: 750px) {
-    .ytm-logo {
+    .yannick .ytm-logo {
       -webkit-transform: scale(0.8);
       transform: scale(0.8);
       left: 29px;
       top: 38px; } }
   @media screen and (max-height: 680px) {
-    .ytm-logo {
+    .yannick .ytm-logo {
       top: 26px;
       left: 41px; } }
   @media screen and (max-width: 1236px) {
-    .ytm-logo {
+    .yannick .ytm-logo {
       left: 69px;
       top: 38px; } }
   @media screen and (max-width: 1024px) {
-    .ytm-logo {
+    .yannick .ytm-logo {
       -webkit-transform: scale(0.8);
       transform: scale(0.8);
       left: 30px;
       top: 14px; } }
-  .ytm-logo li {
+  .yannick .ytm-logo li {
     color: black; }
-    .ytm-logo li:nth-child(2) {
+    .yannick .ytm-logo li:nth-child(2) {
       font-size: 28px;
       font-size: 2.8rem;
       font-weight: bold;
       letter-spacing: 2.8px;
       margin-top: 3px;
       margin-bottom: -1px; }
-    .ytm-logo li:nth-child(3) {
+    .yannick .ytm-logo li:nth-child(3) {
       font-size: 20px;
       font-size: 2rem;
       letter-spacing: 2px; }
 
-.machine-kv {
-  width: 530px;
-  left: 26%;
-  top: 37px;
+.yannick .machine-kv {
+  width: 470px;
+  left: 28%;
+  top: 64px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease; }
   @media screen and (min-width: 1580px) {
-    .machine-kv {
-      left: 43%; } }
+    .yannick .machine-kv {
+      left: 25%; } }
   @media screen and (max-width: 1440px) {
-    .machine-kv {
+    .yannick .machine-kv {
       width: 500px; } }
   @media screen and (max-width: 1300px) {
-    .machine-kv {
+    .yannick .machine-kv {
       width: 480px;
       left: 16%;
       top: 54px; } }
   @media screen and (max-height: 750px) {
-    .machine-kv {
+    .yannick .machine-kv {
       width: 375px;
       left: 38%;
       top: 24px; } }
   @media screen and (max-height: 680px) {
-    .machine-kv {
+    .yannick .machine-kv {
       top: 20px;
       width: 350px; } }
   @media screen and (max-width: 1024px) {
-    .machine-kv {
+    .yannick .machine-kv {
       width: 76%;
       top: 29px;
       left: 15%; } }
   @media screen and (max-width: 767px) {
-    .machine-kv {
+    .yannick .machine-kv {
       width: 63%;
       left: 11px;
       top: 40px; } }
   @media screen and (max-width: 413px) {
-    .machine-kv {
+    .yannick .machine-kv {
       top: 22px;
       width: 68%;
       left: 12px; } }
   @media screen and (max-width: 374px) {
-    .machine-kv {
+    .yannick .machine-kv {
       top: 13px; } }
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-    .machine-kv {
+    .yannick .machine-kv {
       width: 69%;
       left: 19px;
       top: 40px; } }
 
-.mom {
+.yannick .mom {
   width: 207px;
   top: 211px;
   left: -31px; }
   @media screen and (max-width: 1440px) {
-    .mom {
+    .yannick .mom {
       -webkit-transform: scale(0.9);
       transform: scale(0.9); } }
   @media screen and (max-height: 750px) {
-    .mom {
+    .yannick .mom {
       -webkit-transform: scale(0.8);
       transform: scale(0.8);
       top: 93px;
       left: -115px; } }
   @media screen and (max-height: 680px) {
-    .mom {
+    .yannick .mom {
       top: 80px; } }
   @media screen and (max-width: 1236px) {
-    .mom {
+    .yannick .mom {
       left: -70px; } }
   @media screen and (max-width: 1024px) {
-    .mom {
+    .yannick .mom {
       -webkit-transform: scale(0.8);
       transform: scale(0.8);
       top: 83px;
       left: -131px; } }
 
-.mrtBox {
-  left: 0;
+.yannick .mrtBox {
+  left: -33%;
   top: 320px;
   width: 100%; }
   @media screen and (max-width: 1360px) {
-    .mrtBox {
+    .yannick .mrtBox {
       top: 338px; } }
   @media screen and (max-width: 1200px) {
-    .mrtBox {
+    .yannick .mrtBox {
       top: 445px; } }
   @media screen and (max-height: 750px) {
-    .mrtBox {
+    .yannick .mrtBox {
       top: 237px; } }
   @media screen and (max-height: 680px) {
-    .mrtBox {
+    .yannick .mrtBox {
       top: 190px; } }
   @media screen and (max-width: 1024px) {
-    .mrtBox {
+    .yannick .mrtBox {
       top: 350px; } }
   @media screen and (max-width: 767px) {
-    .mrtBox {
+    .yannick .mrtBox {
       top: 35vh; } }
 
-.couple-kv {
+.yannick .couple-kv {
   display: none; }
   @media screen and (max-width: 767px) {
-    .couple-kv {
+    .yannick .couple-kv {
       display: block;
       width: 40%;
       bottom: -52vh;
       right: 9%; } }
   @media screen and (max-width: 413px) {
-    .couple-kv {
+    .yannick .couple-kv {
       bottom: -50vh;
       width: 37%; } }
   @media screen and (max-width: 374px) {
-    .couple-kv {
+    .yannick .couple-kv {
       bottom: -50vh; } }
   @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-    .couple-kv {
+    .yannick .couple-kv {
       width: 42%;
       bottom: -46vh;
       right: 7%; } }
 
-.mrt {
+.yannick .mrt {
   width: 345px; }
   @media screen and (max-width: 1680px) {
-    .mrt {
+    .yannick .mrt {
       margin-left: -5%; } }
   @media screen and (max-width: 1580px) {
-    .mrt {
-      margin-left: -20%; } }
+    .yannick .mrt {
+      margin-left: 0; } }
   @media screen and (max-width: 1360px) {
-    .mrt {
-      width: 300px;
-      margin-left: -30%; } }
+    .yannick .mrt {
+      width: 300px; } }
   @media screen and (max-height: 750px) {
-    .mrt {
+    .yannick .mrt {
       width: 300px; } }
   @media screen and (max-width: 1200px) {
-    .mrt {
+    .yannick .mrt {
       display: none; } }
 
-.dad {
+.yannick .dad {
   width: 267px;
   top: 192px;
   left: 273px; }
   @media screen and (max-width: 1440px) {
-    .dad {
+    .yannick .dad {
       -webkit-transform: scale(0.9);
       transform: scale(0.9);
       left: 217px; } }
   @media screen and (max-height: 750px) {
-    .dad {
+    .yannick .dad {
       -webkit-transform: scale(0.8);
       transform: scale(0.8);
       top: 75px;
       left: 155px; } }
   @media screen and (max-height: 680px) {
-    .dad {
+    .yannick .dad {
       top: 49px; } }
   @media screen and (max-width: 1024px) {
-    .dad {
+    .yannick .dad {
       -webkit-transform: scale(0.8);
       transform: scale(0.8);
       top: 40px;
       left: 160px; } }
 
-.gateBox {
+.yannick .gateBox {
   width: 100%;
   right: 0;
   top: 332px;
   z-index: -1; }
-  .gateBox::after {
+  .yannick .gateBox::after {
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 1200px) {
-    .gateBox {
+    .yannick .gateBox {
       top: 445px; } }
   @media screen and (max-height: 750px) {
-    .gateBox {
+    .yannick .gateBox {
       top: 231px; } }
   @media screen and (max-height: 680px) {
-    .gateBox {
+    .yannick .gateBox {
       top: 185px; } }
   @media screen and (max-width: 1024px) {
-    .gateBox {
+    .yannick .gateBox {
       top: 350px; } }
 
-.gate {
+.yannick .gate {
   width: 360px;
   margin-bottom: -3px;
   float: right; }
   @media screen and (max-width: 1680px) {
-    .gate {
+    .yannick .gate {
       margin-right: -5%; } }
   @media screen and (max-width: 1580px) {
-    .gate {
+    .yannick .gate {
       margin-right: -10%; } }
   @media screen and (max-width: 1200px) {
-    .gate {
+    .yannick .gate {
       display: none; } }
 
-.line-kv-r,
-.line-kv-l {
+.yannick .line-kv-r,
+.yannick .line-kv-l {
   width: 100%; }
 
-.video {
+.yannick .video {
   margin-top: 155px;
   padding-bottom: 100px; }
   @media screen and (max-width: 767px) {
-    .video {
+    .yannick .video {
       padding-bottom: 60px;
       margin-top: 0; } }
-  .video:after {
+  .yannick .video:after {
     content: '';
     width: 100%;
     height: 300px;
@@ -1329,27 +1349,27 @@ h1 {
     left: 0;
     z-index: -1; }
     @media screen and (max-width: 767px) {
-      .video:after {
+      .yannick .video:after {
         height: 165px; } }
     @media screen and (max-width: 374px) {
-      .video:after {
+      .yannick .video:after {
         height: 140px; } }
 
-.videoBox {
+.yannick .videoBox {
   width: 692px;
   margin: auto; }
   @media screen and (max-width: 1024px) {
-    .videoBox {
+    .yannick .videoBox {
       width: 645px; } }
   @media screen and (max-width: 767px) {
-    .videoBox {
+    .yannick .videoBox {
       width: 85%; } }
   @media screen and (min-width: 1025px) {
-    .videoBox a:hover .pic {
+    .yannick .videoBox a:hover .pic {
       -webkit-filter: brightness(100%);
       filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer></filter></svg>#filter');
       filter: brightness(100%); } }
-  .videoBox .pic {
+  .yannick .videoBox .pic {
     -webkit-filter: brightness(70%);
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
     filter: brightness(70%);
@@ -1358,81 +1378,75 @@ h1 {
     transition: filter .3s ease;
     transition: filter .3s ease, -webkit-filter .3s ease; }
 
-.girl {
+.yannick .girl {
   width: 200px;
   top: 36px;
   left: -211px; }
   @media screen and (max-width: 1024px) {
-    .girl {
+    .yannick .girl {
       width: 150px;
       top: 36px;
       left: -175px; } }
 
-.bird {
+.yannick .bird {
   width: 195px;
   top: 16px;
   right: -280px; }
   @media screen and (max-width: 1024px) {
-    .bird {
+    .yannick .bird {
       width: 155px;
       top: 27px;
       right: -180px; } }
 
-.fork,
-.knife {
+.yannick .fork,
+.yannick .knife {
   display: block; }
   @media screen and (max-width: 374px) {
-    .fork,
-    .knife {
+    .yannick .fork,
+    .yannick .knife {
       display: none; } }
 
-.fork {
+.yannick .fork {
   top: -10px;
   left: -34px;
   width: 22px; }
   @media screen and (max-width: 767px) {
-    .fork {
+    .yannick .fork {
       top: 2px;
       left: -34px;
       width: 15px; } }
 
-.knife {
+.yannick .knife {
   top: -14px;
   right: -33px;
   width: 21px; }
   @media screen and (max-width: 767px) {
-    .knife {
+    .yannick .knife {
       top: -38px;
       right: 12px;
       width: 13px; } }
 
-.heart {
+.yannick .heart {
   width: 20px;
   top: -17px;
   left: 51px; }
 
-.card {
+.yannick .card {
   padding: 80px 0;
-  background: url(../img/bg-cake.png) no-repeat left bottom, #e4e5e7;
+  background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_516082533152018052525.png) no-repeat left bottom, #e4e5e7;
   -webkit-transition: all .3s ease;
-  transition: all .3s ease; }
-  @media screen and (max-width: 1680px) {
-    .card {
-      background-position: 35% bottom; } }
-  @media screen and (max-width: 1360px) {
-    .card {
-      background-size: 95%;
-      background-position: 0 bottom; } }
+  transition: all .3s ease;
+  background-size: 100%; }
   @media screen and (max-width: 1200px) {
-    .card {
+    .yannick .card {
       background-size: 98%;
       background-position: -100px bottom; } }
   @media screen and (max-width: 767px) {
-    .card {
+    .yannick .card {
       padding: 60px 0 160px;
-      background: url(../img/bg-cake-m.png) no-repeat left bottom, #e4e5e7;
+      background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_271513633152018052536.png) no-repeat left bottom, #e4e5e7;
       background-size: contain; } }
-  .card .main {
+  .yannick .card .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1442,154 +1456,154 @@ h1 {
     margin-top: 12px;
     padding-left: 55px; }
     @media screen and (max-width: 767px) {
-      .card .main {
+      .yannick .card .main {
         padding-left: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse; } }
-  .card .wording {
+  .yannick .card .wording {
     margin-top: 66px;
     text-align: left; }
     @media screen and (max-width: 767px) {
-      .card .wording {
+      .yannick .card .wording {
         margin-top: 15px;
         margin-bottom: 20px;
         text-align: center; } }
-  .card li span {
+  .yannick .card li span {
     display: inline-block;
     vertical-align: middle; }
-  .card li:first-child {
+  .yannick .card li:first-child {
     font-size: 16px;
     font-size: 1.6rem;
     letter-spacing: 1.6px; }
     @media screen and (max-width: 767px) {
-      .card li:first-child {
+      .yannick .card li:first-child {
         font-size: 1.4rem; } }
-    .card li:first-child span:last-child {
+    .yannick .card li:first-child span:last-child {
       padding: 2px 7px;
       border: 1px solid black;
       margin-top: 22px;
       margin-left: 28px; }
       @media screen and (max-width: 767px) {
-        .card li:first-child span:last-child {
+        .yannick .card li:first-child span:last-child {
           margin-top: 22px;
           margin-left: 20px; } }
-  .card li:nth-child(2) {
+  .yannick .card li:nth-child(2) {
     font-size: 20px;
     font-size: 2rem;
     letter-spacing: 2px;
     margin-top: 15px; }
-  .card li:nth-child(3) {
+  .yannick .card li:nth-child(3) {
     font-size: 13px;
     font-size: 1.3rem;
     letter-spacing: 1.3px; }
   @media screen and (max-width: 767px) {
-    .card h3 span {
+    .yannick .card h3 span {
       display: block; } }
   @media screen and (max-width: 767px) {
-    .card h3 .none-m {
+    .yannick .card h3 .none-m {
       display: none; } }
 
-.card-logo {
+.yannick .card-logo {
   width: 162px; }
   @media screen and (max-width: 767px) {
-    .card-logo {
+    .yannick .card-logo {
       width: 125px; } }
 
-.cardBox {
+.yannick .cardBox {
   width: 255px;
   margin-left: 33px; }
   @media screen and (max-width: 767px) {
-    .cardBox {
+    .yannick .cardBox {
       width: 50%;
       margin: auto; } }
 
-.banklogo {
+.yannick .banklogo {
   width: 95px;
   margin: 0 8px; }
 
 @media screen and (max-width: 767px) {
-  .btnBox {
+  .yannick .btnBox {
     width: 92%;
     margin: 30px auto; } }
 
 @media screen and (max-width: 767px) {
-  .btnBox a {
+  .yannick .btnBox a {
     width: 48%; } }
 
-.btnBox a:first-child {
+.yannick .btnBox a:first-child {
   margin-right: 25px; }
   @media screen and (max-width: 767px) {
-    .btnBox a:first-child {
+    .yannick .btnBox a:first-child {
       margin-right: 4%; } }
 
-.cup {
+.yannick .cup {
   width: 40px;
   right: -55px;
   top: -50px; }
   @media screen and (max-width: 767px) {
-    .cup {
+    .yannick .cup {
       width: 34px;
       right: 45px;
       top: -66px; } }
   @media screen and (max-width: 374px) {
-    .cup {
+    .yannick .cup {
       width: 30px;
       right: 37px;
       top: -58px; } }
 
 @media screen and (min-width: 768px) {
-  .card-star1,
-  .card-star2,
-  .card-star3 {
+  .yannick .card-star1,
+  .yannick .card-star2,
+  .yannick .card-star3 {
     display: none; } }
 
-.card-star1 {
+.yannick .card-star1 {
   width: 17px;
   top: 97px;
   left: -41px; }
 
-.card-star2 {
+.yannick .card-star2 {
   width: 28px;
   top: 114px;
   left: -26px; }
 
-.card-star3 {
+.yannick .card-star3 {
   width: 14px;
   top: 26px;
   right: 4px; }
 
-.product {
+.yannick .product {
   padding-top: 160px; }
   @media screen and (max-width: 767px) {
-    .product {
+    .yannick .product {
       padding-top: 60px; } }
-  .product .ytm {
+  .yannick .product .ytm {
     width: 88px;
     margin-right: 5px; }
     @media screen and (max-width: 767px) {
-      .product .ytm {
+      .yannick .product .ytm {
         width: 70px;
         margin-right: 8px; } }
     @media screen and (max-width: 374px) {
-      .product .ytm {
+      .yannick .product .ytm {
         width: 55px; } }
-  .product .lin-cir {
+  .yannick .product .lin-cir {
     width: 171px;
     right: 0;
     bottom: -11px; }
     @media screen and (max-width: 767px) {
-      .product .lin-cir {
+      .yannick .product .lin-cir {
         width: 140px;
         right: 28px;
         bottom: -5px; } }
     @media screen and (max-width: 374px) {
-      .product .lin-cir {
+      .yannick .product .lin-cir {
         width: 100px;
         right: 28px;
         bottom: -3px; } }
-  .product .main {
+  .yannick .product .main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1601,15 +1615,15 @@ h1 {
     align-items: flex-start;
     margin-top: 40px; }
     @media screen and (max-width: 767px) {
-      .product .main {
+      .yannick .product .main {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column; } }
     @media screen and (max-width: 374px) {
-      .product .main {
+      .yannick .product .main {
         margin-top: 20px; } }
-  .product .item {
+  .yannick .product .item {
     width: 270px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1621,327 +1635,321 @@ h1 {
     margin: 0 30px;
     text-align: left; }
     @media screen and (max-width: 767px) {
-      .product .item {
+      .yannick .product .item {
         width: 85%;
         margin: 20px auto; } }
-  .product .picBox {
+  .yannick .product .picBox {
     width: 100%;
     height: 257px; }
     @media screen and (max-width: 767px) {
-      .product .picBox {
+      .yannick .product .picBox {
         height: auto; } }
-  .product .icon1 {
+  .yannick .product .icon1 {
     width: 37px;
     top: -3px;
     right: -47px; }
-  .product .icon2 {
+  .yannick .product .icon2 {
     width: 29px;
     top: 3px;
     right: -39px; }
-  .product .icon3 {
+  .yannick .product .icon3 {
     width: 28px;
     top: -3px;
     right: -38px; }
-  .product .tt {
+  .yannick .product .tt {
     font-size: 20px;
     font-size: 2rem;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px; }
-  .product p {
+  .yannick .product p {
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 1.73;
     letter-spacing: 1.5px;
     margin-bottom: 40px; }
     @media screen and (max-width: 767px) {
-      .product p {
+      .yannick .product p {
         margin-bottom: 20px; } }
     @media screen and (max-width: 374px) {
-      .product p {
+      .yannick .product p {
         font-size: 1.4rem; } }
-    .product p.cheese {
+    .yannick .product p.cheese {
       margin-bottom: 13px; }
       @media screen and (max-width: 767px) {
-        .product p.cheese {
+        .yannick .product p.cheese {
           margin-bottom: 20px; } }
-  .product .price {
+  .yannick .product .price {
     font-size: 24px;
     font-size: 2.4rem;
     font-weight: bold; }
   @media screen and (max-width: 767px) {
-    .product .line-red {
+    .yannick .product .line-red {
       width: 90%;
       left: 5%;
       height: 10px;
       bottom: 2px; }
-      .product .line-red img {
+      .yannick .product .line-red img {
         height: 100%; } }
 
-.exclusive span {
+.yannick .exclusive span {
   font-weight: normal; }
-  .exclusive span span {
+  .yannick .exclusive span span {
     font-weight: normal; }
 
-.exclusive .red {
+.yannick .exclusive .red {
   font-weight: bold; }
 
-.org {
+.yannick .org {
   color: #a9a9a9;
   font-size: 15px;
   font-size: 1.5rem;
   display: block;
   text-decoration: line-through; }
 
-.tape1,
-.tape2 {
+.yannick .tape1,
+.yannick .tape2 {
   width: 100px; }
 
-.tape1 {
+.yannick .tape1 {
   top: -12px;
   left: -27px; }
 
-.tape2 {
+.yannick .tape2 {
   bottom: -12px;
   right: -27px; }
 
-.gift {
+.yannick .gift {
   margin-top: 185px;
   margin-bottom: 250px; }
   @media screen and (max-width: 767px) {
-    .gift {
+    .yannick .gift {
       margin: 60px auto; } }
-  .gift h2,
-  .gift p {
+  .yannick .gift h2,
+  .yannick .gift p {
     text-align: left; }
     @media screen and (max-width: 767px) {
-      .gift h2,
-      .gift p {
+      .yannick .gift h2,
+      .yannick .gift p {
         text-align: center; } }
-    .gift h2 span,
-    .gift p span {
+    .yannick .gift h2 span,
+    .yannick .gift p span {
       display: block; }
   @media screen and (max-width: 767px) {
-    .gift p {
+    .yannick .gift p {
       margin-top: 10px; } }
 
-.gift-bag {
+.yannick .gift-bag {
   width: 290px;
   left: -320px;
   top: -112px; }
   @media screen and (max-width: 1024px) {
-    .gift-bag {
+    .yannick .gift-bag {
       width: 200px;
       left: -240px;
       top: -40px; } }
   @media screen and (max-width: 767px) {
-    .gift-bag {
+    .yannick .gift-bag {
       width: 58%;
       position: inherit;
       left: auto;
       top: auto;
       margin: auto; } }
 
-.leaf1 {
+.yannick .leaf1 {
   width: 35px;
   right: -7px;
   bottom: -3px; }
   @media screen and (max-width: 767px) {
-    .leaf1 {
+    .yannick .leaf1 {
       width: 25px; } }
 
-.leaf2 {
+.yannick .leaf2 {
   width: 38px;
   top: 20px;
   left: 0; }
   @media screen and (max-width: 767px) {
-    .leaf2 {
+    .yannick .leaf2 {
       width: 30px;
       top: auto;
       bottom: 0; } }
 
-.gift-bird {
+.yannick .gift-bird {
   display: none; }
   @media screen and (max-width: 767px) {
-    .gift-bird {
+    .yannick .gift-bird {
       display: block;
       width: 150px;
       top: 0;
       right: -125px; } }
 
-.couple {
+.yannick .couple {
   width: 285px;
   top: -118px;
   right: -236px; }
   @media screen and (max-width: 1024px) {
-    .couple {
+    .yannick .couple {
       width: 230px;
       top: -75px;
       right: -201px; } }
 
-.tt-gift {
+.yannick .tt-gift {
   width: 42px;
   top: -15px;
   right: 80px;
   -webkit-transform: rotate(-18deg);
   transform: rotate(-18deg); }
   @media screen and (max-width: 767px) {
-    .tt-gift {
+    .yannick .tt-gift {
       -webkit-transform: rotate(18deg);
       transform: rotate(18deg);
       top: -13px;
       right: 36px;
       width: 30px; } }
 
-.ytmInfo {
+.yannick .ytmInfo {
   margin-bottom: 180px; }
   @media screen and (max-width: 767px) {
-    .ytmInfo {
+    .yannick .ytmInfo {
       margin-top: 80px;
       margin-bottom: 50px; } }
-  .ytmInfo .main {
+  .yannick .ytmInfo .main {
     margin-top: 85px; }
     @media screen and (max-width: 767px) {
-      .ytmInfo .main {
+      .yannick .ytmInfo .main {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
         margin-top: 10px; } }
-  .ytmInfo .item {
+  .yannick .ytmInfo .item {
     width: 400px;
     margin: 0 34px; }
     @media screen and (max-width: 767px) {
-      .ytmInfo .item {
+      .yannick .ytmInfo .item {
         width: 85%;
         margin: 20px auto 30px; } }
-    .ytmInfo .item:first-child:after {
+    .yannick .ytmInfo .item:first-child:after {
       content: '';
       width: 8px;
       height: 90%;
-      background: url(../img/menu-bor2.png);
+      background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_366673046152018052530.png);
       position: absolute;
       top: 0;
       right: -38px; }
-  .ytmInfo li:first-child {
+  .yannick .ytmInfo li:first-child {
     font-size: 20px;
     font-size: 2rem;
     letter-spacing: 2px;
     font-weight: bold; }
     @media screen and (max-width: 767px) {
-      .ytmInfo li:first-child {
+      .yannick .ytmInfo li:first-child {
         font-size: 1.7rem; } }
     @media screen and (max-width: 413px) {
-      .ytmInfo li:first-child {
+      .yannick .ytmInfo li:first-child {
         font-size: 1.6rem; } }
     @media screen and (max-width: 374px) {
-      .ytmInfo li:first-child {
+      .yannick .ytmInfo li:first-child {
         font-size: 1.4rem; } }
-  .ytmInfo li:nth-child(2) {
+  .yannick .ytmInfo li:nth-child(2) {
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 1.6;
     letter-spacing: 1.5px;
     margin-bottom: 25px; }
     @media screen and (max-width: 767px) {
-      .ytmInfo li:nth-child(2) {
+      .yannick .ytmInfo li:nth-child(2) {
         margin-bottom: 15px; } }
     @media screen and (max-width: 374px) {
-      .ytmInfo li:nth-child(2) {
+      .yannick .ytmInfo li:nth-child(2) {
         font-size: 1.4rem; } }
-    .ytmInfo li:nth-child(2) span {
+    .yannick .ytmInfo li:nth-child(2) span {
       display: block; }
-  .ytmInfo li:nth-child(4) {
+  .yannick .ytmInfo li:nth-child(4) {
     font-size: 20px;
     font-size: 2rem;
     margin-top: 12px; }
-  .ytmInfo .line-cir:after {
+  .yannick .ytmInfo .line-cir:after {
     bottom: -22px;
     background-size: cover; }
     @media screen and (max-width: 767px) {
-      .ytmInfo .line-cir:after {
+      .yannick .ytmInfo .line-cir:after {
         bottom: -15px;
         height: 14px; } }
-  .ytmInfo .videoBox {
+  .yannick .ytmInfo .videoBox {
     display: block;
     width: 100%; }
     @media screen and (min-width: 1025px) {
-      .ytmInfo .videoBox:hover .pic {
+      .yannick .ytmInfo .videoBox:hover .pic {
         -webkit-filter: brightness(100%);
         filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer></filter></svg>#filter');
         filter: brightness(100%); } }
-  .ytmInfo .pic {
+  .yannick .ytmInfo .pic {
     display: block; }
-  .ytmInfo .deco {
-    width: 300px;
+  .yannick .ytmInfo .deco {
+    width: 250px;
     top: -28px;
-    left: 14%; }
-    @media screen and (max-width: 1725px) {
-      .ytmInfo .deco {
-        left: 9%; } }
-    @media screen and (max-width: 1480px) {
-      .ytmInfo .deco {
-        left: 3%; } }
+    left: 0; }
     @media screen and (max-width: 1360px) {
-      .ytmInfo .deco {
+      .yannick .ytmInfo .deco {
         width: 255px; } }
     @media screen and (max-width: 1200px) {
-      .ytmInfo .deco {
+      .yannick .ytmInfo .deco {
         display: none; } }
     @media screen and (max-width: 767px) {
-      .ytmInfo .deco {
+      .yannick .ytmInfo .deco {
         display: block;
         position: inherit;
         margin: auto;
         width: 50%; } }
 
-.feature {
+.yannick .feature {
   margin-bottom: 165px; }
   @media screen and (max-width: 767px) {
-    .feature {
+    .yannick .feature {
       margin-bottom: 50px; } }
-  .feature .line-red {
+  .yannick .feature .line-red {
     width: 108%;
     left: -4%; }
-  .feature .deco {
+  .yannick .feature .deco {
     display: none; }
     @media screen and (max-width: 767px) {
-      .feature .deco {
+      .yannick .feature .deco {
         display: block;
         width: 27px;
         top: -7px;
         right: -22px; } }
-  .feature ul {
+  .yannick .feature ul {
     margin-top: 90px; }
     @media screen and (max-width: 767px) {
-      .feature ul {
+      .yannick .feature ul {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-top: 20px; } }
-  .feature li {
+  .yannick .feature li {
     width: 180px;
     margin: 0 24px; }
     @media screen and (max-width: 767px) {
-      .feature li {
+      .yannick .feature li {
         width: 50%;
         margin: 20px auto; } }
-    .feature li:not(:last-child) {
+    .yannick .feature li:not(:last-child) {
       position: relative; }
-      .feature li:not(:last-child):after {
+      .yannick .feature li:not(:last-child):after {
         content: '';
         width: 8px;
         height: 100%;
-        background: url(../img/menu-bor2.png);
+        background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_366673046152018052530.png);
         position: absolute;
         top: 0;
         right: -30px; }
         @media screen and (max-width: 767px) {
-          .feature li:not(:last-child):after {
+          .yannick .feature li:not(:last-child):after {
             right: -4px; } }
     @media screen and (max-width: 767px) {
-      .feature li:nth-child(2):after {
+      .yannick .feature li:nth-child(2):after {
         display: none; } }
-  .feature .icon {
+  .yannick .feature .icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1950,99 +1958,99 @@ h1 {
     align-items: center;
     margin: auto;
     height: 98px; }
-  .feature .tt {
+  .yannick .feature .tt {
     display: block;
     font-size: 20px;
     font-size: 2rem;
     margin: 10px 0 5px;
     letter-spacing: 2px;
     font-weight: bold; }
-  .feature .txt {
+  .yannick .feature .txt {
     font-size: 15px;
     font-size: 1.5rem; }
     @media screen and (max-width: 767px) {
-      .feature .txt {
+      .yannick .feature .txt {
         font-size: 1.4rem; } }
-    .feature .txt span {
+    .yannick .feature .txt span {
       display: block; }
-      .feature .txt span span {
+      .yannick .feature .txt span span {
         display: inline-block; }
-  .feature .bag .icon {
+  .yannick .feature .bag .icon {
     width: 100px; }
-  .feature .cake .icon {
+  .yannick .feature .cake .icon {
     width: 116px; }
-  .feature .pay .icon {
+  .yannick .feature .pay .icon {
     width: 93px; }
-  .feature .buy .icon {
+  .yannick .feature .buy .icon {
     width: 91px; }
 
-.num54 {
+.yannick .num54 {
   width: 47px;
   display: inline-block;
   margin: 0 10px 10px; }
   @media screen and (max-width: 767px) {
-    .num54 {
+    .yannick .num54 {
       margin: 0 10px 15px;
       width: 40px; } }
   @media screen and (max-width: 374px) {
-    .num54 {
+    .yannick .num54 {
       width: 35px; } }
 
-.location h2 .ttBox {
+.yannick .location h2 .ttBox {
   padding: 0 30px; }
 
-.location .deco {
+.yannick .location .deco {
   display: none; }
   @media screen and (max-width: 767px) {
-    .location .deco {
+    .yannick .location .deco {
       display: block;
       width: 30px;
       right: 0;
       top: -11px; } }
 
-.location .line-red {
+.yannick .location .line-red {
   bottom: 8px; }
 
-.location .main {
+.yannick .location .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 65px;
   margin-top: 70px; }
   @media screen and (max-width: 767px) {
-    .location .main {
+    .yannick .location .main {
       margin-top: 30px; } }
 
-.location .redBox {
+.yannick .location .redBox {
   width: 27%;
   background: #e10012; }
   @media screen and (max-width: 1024px) {
-    .location .redBox {
+    .yannick .location .redBox {
       width: 10%; } }
   @media screen and (max-width: 767px) {
-    .location .redBox {
+    .yannick .location .redBox {
       width: 15%; } }
 
-.location .mrt-line {
+.yannick .location .mrt-line {
   width: 35%;
   text-align: left;
   padding-right: 20px; }
   @media screen and (max-width: 1440px) {
-    .location .mrt-line {
+    .yannick .location .mrt-line {
       width: 40%; } }
   @media screen and (max-width: 1024px) {
-    .location .mrt-line {
+    .yannick .location .mrt-line {
       width: 65%; } }
   @media screen and (max-width: 767px) {
-    .location .mrt-line {
+    .yannick .location .mrt-line {
       width: 85%;
       padding-right: 0; } }
 
-.location .tt {
+.yannick .location .tt {
   font-size: 24px;
   font-size: 2.4rem;
   font-weight: bold; }
-  .location .tt:before {
+  .yannick .location .tt:before {
     content: '';
     width: 26px;
     height: 26px;
@@ -2051,98 +2059,92 @@ h1 {
     left: -42px;
     position: absolute; }
     @media screen and (max-width: 767px) {
-      .location .tt:before {
+      .yannick .location .tt:before {
         width: 20px;
         height: 20px;
         left: -33px;
         top: 5px; } }
   @media screen and (max-width: 767px) {
-    .location .tt {
+    .yannick .location .tt {
       font-size: 2rem; } }
 
-.location p {
+.yannick .location p {
   font-size: 18px;
   font-size: 1.8rem; }
   @media screen and (max-width: 767px) {
-    .location p {
+    .yannick .location p {
       font-size: 1.6rem; } }
 
-.location .machineBox {
+.yannick .location .machineBox {
   width: 36%;
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-left: 30px;
   padding-bottom: 10px; }
   @media screen and (max-width: 1024px) {
-    .location .machineBox {
+    .yannick .location .machineBox {
       padding-bottom: 60px; } }
   @media screen and (max-width: 767px) {
-    .location .machineBox {
+    .yannick .location .machineBox {
       display: none; } }
 
-.location .machine {
+.yannick .location .machine {
   width: 500px;
   -ms-flex-negative: 0;
   flex-shrink: 0; }
   @media screen and (max-width: 1440px) {
-    .location .machine {
+    .yannick .location .machine {
       width: 455px; } }
   @media screen and (max-width: 1024px) {
-    .location .machine {
+    .yannick .location .machine {
       width: 355px; } }
 
-.location li {
+.yannick .location li {
   padding-left: 28px;
   margin: 30px 0; }
   @media screen and (max-width: 767px) {
-    .location li {
+    .yannick .location li {
       margin: 20px 0;
       padding-left: 22px;
       padding-right: 20px; } }
-  .location li:first-child .tt:before {
+  .yannick .location li:first-child .tt:before {
     background: #0a6cca; }
-  .location li:nth-child(2) .tt:before {
+  .yannick .location li:nth-child(2) .tt:before {
     background: #c1892a; }
-  .location li:nth-child(3) .tt:before {
+  .yannick .location li:nth-child(3) .tt:before {
     background: #e10012;
     border: 3px solid white;
     top: 3px; }
     @media screen and (max-width: 767px) {
-      .location li:nth-child(3) .tt:before {
+      .yannick .location li:nth-child(3) .tt:before {
         top: 2px; } }
-  .location li:nth-child(4) .tt:before {
+  .yannick .location li:nth-child(4) .tt:before {
     background: #0a8557; }
-  .location li:nth-child(5) .tt {
+  .yannick .location li:nth-child(5) .tt {
     margin-bottom: 10px; }
-    .location li:nth-child(5) .tt:before {
+    .yannick .location li:nth-child(5) .tt:before {
       background: #f9b21e; }
 
-.star1 {
+.yannick .star1 {
   top: -188px;
   left: 46px;
   width: 18px; }
 
-.star2 {
+.yannick .star2 {
   top: -75px;
   left: 176px;
   width: 28px; }
 
-.star3 {
+.yannick .star3 {
   top: -127px;
   left: 315px;
   width: 15px; }
 
-footer {
+.yannick footer {
   margin-top: 135px; }
-  footer .main {
-    width: 100%;
-    background: #e10012;
-    padding: 70px 0;
-    text-align: left; }
-    @media screen and (max-width: 767px) {
-      footer .main {
-        padding: 50px 0; } }
-    footer .main:before {
+  .yannick footer .main {
+    width: 100%; }
+    .yannick footer .main:before {
       content: '';
       width: 100%;
       height: 17px;
@@ -2150,75 +2152,75 @@ footer {
       position: absolute;
       top: -17px;
       left: 0;
-      background: url(../img/line-footer.png) repeat-x; }
-  footer .mrt-cart {
+      background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_938653842152018052538.png) repeat-x; }
+  .yannick footer .mrt-cart {
     left: -20%;
     top: -80px; }
     @media screen and (max-width: 767px) {
-      footer .mrt-cart {
+      .yannick footer .mrt-cart {
         left: -100%; } }
-    footer .mrt-cart img {
+    .yannick footer .mrt-cart img {
       width: auto;
       height: 65px; }
-  footer li {
+  .yannick footer li {
     font-size: 13px;
     font-size: 1.3rem;
     color: white;
     line-height: 2.15;
     font-weight: 500; }
-  footer .right {
+  .yannick footer .right {
     color: white;
     text-align: right; }
-  footer .left {
+  .yannick footer .left {
     margin-right: 170px; }
     @media screen and (max-width: 1024px) {
-      footer .left {
+      .yannick footer .left {
         margin-right: 100px; } }
     @media screen and (max-width: 767px) {
-      footer .left {
+      .yannick footer .left {
         margin-right: 0;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
         text-align: center; } }
-  footer a {
+  .yannick footer a {
     -webkit-transition: -webkit-transform .3s ease;
     transition: -webkit-transform .3s ease;
     transition: transform .3s ease;
     transition: transform .3s ease, -webkit-transform .3s ease; }
     @media screen and (min-width: 1025px) {
-      footer a:hover {
+      .yannick footer a:hover {
         -webkit-transform: translateY(-3px);
         transform: translateY(-3px); } }
 
-.footer-logo {
+.yannick .footer-logo {
   width: 170px;
   margin-right: 30px; }
   @media screen and (max-width: 767px) {
-    .footer-logo {
+    .yannick .footer-logo {
       width: 150px;
       margin-right: 0;
       margin-bottom: 10px; } }
 
-.social {
+.yannick .social {
   margin-bottom: 10px; }
-  .social > * {
+  .yannick .social > * {
     display: inline-block;
     vertical-align: middle; }
-  .social span:first-child {
+  .yannick .social span:first-child {
     line-height: 1;
     font-size: 13px;
     font-size: 1.3rem; }
-  .social span:nth-child(2) {
+  .yannick .social span:nth-child(2) {
     width: 30px;
     height: 1px;
     background: #fff;
     display: inline-block;
     margin: 0 20px; }
-  .social a.ig {
+  .yannick .social a.ig {
     margin: 0 20px; }
-  .social a img {
+  .yannick .social a img {
     height: 23px;
     width: auto; }
 
