@@ -249,7 +249,7 @@
         },
         transIn(){
             window.tl = new TimelineMax({ repeat: -1, paused: true });
-            var step1 = new TweenMax.fromTo('footer .mrt-cart', 5, {
+            var step1 = new TweenMax.fromTo('footer .mrt-cart img', 5, {
                 x: 20,
                 ease: Expo.easeIn,
             },{
@@ -257,9 +257,9 @@
                 ease: Expo.easeIn,
             });
             var step2 = function(time){
-                return new TweenMax.to('footer .mrt-cart', 2, { });
+                return new TweenMax.to('footer .mrt-cart img', 2, { });
             }
-            var step3 = new TweenMax.fromTo('footer .mrt-cart', 1, {
+            var step3 = new TweenMax.fromTo('footer .mrt-cart img', 1, {
                 x: -250,
                 ease: Back.easeOut.config(1)
             },{
