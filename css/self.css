@@ -85,13 +85,13 @@
 .kv .machine-kv {
     transform: matrix(1, 0, 0, 1, 0, 200) scaleY(0);
     opacity: 0;
-	-moz-transition: none;
-	-webkit-transition: none;
-	-o-transition: color 0 ease-in;
-	transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: color 0 ease-in;
+    transition: none;
 }
 
-.kv .mom img,
+.kv .mom,
 .kv .dad {
     transform: matrix(1, 0, 0, 1, 50, 0);
     opacity: 0;
