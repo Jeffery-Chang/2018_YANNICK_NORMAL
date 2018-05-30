@@ -312,13 +312,32 @@
             $('a.por').click(function(e){
                 e.preventDefault();
 
-                // 暫不開放
+                // 暫不開放 還沒有影片連結
                 return;
 
                 var videoID = $(this).data('video');
-                $this.videoOpen(videoID);
+                $this.popupOpen(videoID);
             });
 
+            // MRT MAP
+            $('.location a.btn').click(function(e){
+                e.preventDefault();
+                $this.popupOpen();
+            });
+
+            // POPUP CLOSE
+            $('.lightbox').click(function(e){
+                e.preventDefault();
+                $(this).fadeOut('fast', function(){
+                    $(this).find('.embed-container').empty();
+                });
+            });
+            // IMG PREVENT CLICK
+            /*$('.lightbox .map_img').click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+            });*/
+            
             // VIDEO CLOSE
             $('.lightbox .close-btn').click(function(e){
                 e.preventDefault();
@@ -327,9 +346,19 @@
                 });
             });
         },
-        videoOpen(id){
+        popupOpen(id){
             var content = $('.lightbox');
-            content.find('.embed-container').append('<iframe frameborder="0" allowfullscreen="1" src="https://www.youtube.com/embed/'+ id +'?rel=0&amp;controls=0?ecver=2&autoplay=1&mute=1"></iframe>');
+
+            if(id != undefined){
+                content.find('.embed-container').append('<iframe frameborder="0" allow="autoplay" allowfullscreen="1" src="https://www.youtube.com/embed/'+ id +'?rel=0&amp;controls=0?ecver=2&autoplay=1"></iframe>');
+                content.find('.embed-container, .close-btn').show();
+                content.find('.map_img').hide();
+            }else{
+                content.find('.embed-container, .close-btn').hide();
+                content.find('.embed-container').empty();
+                content.find('.map_img').show();
+            }
+
             content.fadeIn('fast');
         },
         scroll(){
