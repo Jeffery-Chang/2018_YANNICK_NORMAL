@@ -971,7 +971,7 @@ ul {
   @media screen and (max-height: 750px) {
     .yannick .machine-kv {
       width: 375px;
-      left: 38%;
+      left: 30%;
       top: 24px; } }
   @media screen and (max-height: 680px) {
     .yannick .machine-kv {
@@ -1005,14 +1005,8 @@ ul {
   width: 207px;
   top: 211px;
   left: -31px; }
-  @media screen and (max-width: 1440px) {
-    .yannick .mom {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9); } }
   @media screen and (max-height: 750px) {
     .yannick .mom {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
       top: 93px;
       left: -115px; } }
   @media screen and (max-height: 680px) {
@@ -1023,10 +1017,20 @@ ul {
       left: -70px; } }
   @media screen and (max-width: 1024px) {
     .yannick .mom {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
       top: 83px;
       left: -131px; } }
+  @media screen and (max-width: 1440px) {
+    .yannick .mom img {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9); } }
+  @media screen and (max-height: 750px) {
+    .yannick .mom img {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); } }
+  @media screen and (max-width: 1024px) {
+    .yannick .mom img {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); } }
 
 .yannick .mrtBox {
   left: -33%;
@@ -1096,13 +1100,9 @@ ul {
   left: 273px; }
   @media screen and (max-width: 1440px) {
     .yannick .dad {
-      -webkit-transform: scale(0.9);
-      transform: scale(0.9);
       left: 217px; } }
   @media screen and (max-height: 750px) {
     .yannick .dad {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
       top: 75px;
       left: 155px; } }
   @media screen and (max-height: 680px) {
@@ -1110,10 +1110,20 @@ ul {
       top: 49px; } }
   @media screen and (max-width: 1024px) {
     .yannick .dad {
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
       top: 40px;
       left: 160px; } }
+  @media screen and (max-width: 1440px) {
+    .yannick .dad img {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9); } }
+  @media screen and (max-height: 750px) {
+    .yannick .dad img {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); } }
+  @media screen and (max-width: 1024px) {
+    .yannick .dad img {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8); } }
 
 .yannick .gateBox {
   width: 100%;

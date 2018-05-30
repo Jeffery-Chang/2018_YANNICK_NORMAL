@@ -137,9 +137,9 @@
             });
         },
         initPage(){
-            var video_part = $('.video h2, .video .sub, .video .videoBox a.por');
-            var video_girl = $('.video .girl');
-            var video_bird = $('.video .bird');
+            var video_part = '.video h2, .video .sub, .video .videoBox a.por';
+            var video_girl = '.video .girl';
+            var video_bird = '.video .bird';
             var video_view = (!this.chkMobile()) ? .5 : .8;
             sr.reveal(video_part, {
                 origin: 'top',
@@ -154,23 +154,23 @@
                     opacity: 0,
                     viewFactor: .5,
                     beforeReveal:  (domEl) => {
-                        if($(domEl).is(":visible")) video_bird.addClass('active');
+                        if($(domEl).is(":visible")) $(video_bird).addClass('active');
                     },
                 });
             }
 
-            var card_part = $('.card h2, .card h3, .card .main, .card .btnBox');
+            var card_part = '.card h2, .card h3, .card .main, .card .btnBox';
             sr.reveal(card_part, {
                 origin: 'top',
                 opacity: 0,
                 viewFactor: .5,
             }, 300);
 
-            var pdt_part1 = $('.product > h2, .product .main');
-            var pdt_part2 = $('.product .gift h2 > span, .product .giftInfo > p');
-            var pdt_bag = (!this.chkMobile()) ? $('.product .bag, .product .leaf1, .product .leaf2') : $('.product .inner');
-            var pdt_couple = $('.product .couple');
-            var pdt_bird = $('.product .gift-bird');
+            var pdt_part1 = '.product > h2, .product .main';
+            var pdt_part2 = '.product .gift h2 > span, .product .giftInfo > p';
+            var pdt_bag = (!this.chkMobile()) ? '.product .bag, .product .leaf1, .product .leaf2' : '.product .inner';
+            var pdt_couple = '.product .couple';
+            var pdt_bird = '.product .gift-bird';
             sr.reveal(pdt_part1, {
                 origin: 'top',
                 opacity: 0,
@@ -207,13 +207,13 @@
                     viewFactor: .5,
                     delay: 500,
                     afterReveal: (domEl) => {
-                        if($(domEl).hasClass('show')) pdt_bird.addClass('active');
+                        if($(domEl).hasClass('show')) $(pdt_bird).addClass('active');
                     },
                 });
             }
 
-            var ytm_part = $('.ytmInfo h2, .ytmInfo .main');
-            var ytm_phone = $('.ytmInfo .deco');
+            var ytm_part = '.ytmInfo h2, .ytmInfo .main';
+            var ytm_phone = '.ytmInfo .deco';
             sr.reveal(ytm_part, {
                 origin: 'top',
                 opacity: 0,
@@ -226,15 +226,15 @@
                 delay: 400,
             });
 
-            var feature_part = $('.feature h2, .feature ul');
+            var feature_part = '.feature h2, .feature ul';
             sr.reveal(feature_part, {
                 origin: 'top',
                 opacity: 0,
                 viewFactor: .5,
             }, 300);
 
-            var location_part = $('.location h2, .location .btn');
-            var location_info = $('.location .mrt-line li');
+            var location_part = '.location h2, .location .btn';
+            var location_info = '.location .mrt-line li';
             sr.reveal(location_part, {
                 origin: 'top',
                 opacity: 0,

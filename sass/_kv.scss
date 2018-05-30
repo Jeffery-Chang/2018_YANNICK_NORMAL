@@ -265,7 +265,7 @@
         }
         @include media-h(750px) {
             width: 375px;
-            left: 38%;
+            left: 30%;
             top: 24px;
         }
         @include media-h(680px) {
@@ -300,13 +300,9 @@
         width: 207px;
         top: 211px;
         left: -31px;
-        @include pc-1440 {
-            transform: scale(0.9);
-        }
         @include media-h(750px) {
-            transform: scale(0.8);
             top: 93px;
-            left: -115px;
+            left: -115px; // transform: scale(0.8);
         }
         @include media-h(680px) {
             top: 80px;
@@ -315,9 +311,19 @@
             left: -70px;
         }
         @include m-1024 {
-            transform: scale(0.8);
             top: 83px;
             left: -131px;
+        }
+        img {
+            @include pc-1440 {
+                transform: scale(0.9);
+            }
+            @include media-h(750px) {
+                transform: scale(0.8);
+            }
+            @include m-1024 {
+                transform: scale(0.8);
+            }
         }
     }
     .mrtBox {
@@ -387,11 +393,9 @@
         top: 192px;
         left: 273px;
         @include pc-1440 {
-            transform: scale(0.9);
             left: 217px;
         }
         @include media-h(750px) {
-            transform: scale(0.8);
             top: 75px;
             left: 155px;
         }
@@ -399,9 +403,19 @@
             top: 49px;
         }
         @include m-1024 {
-            transform: scale(0.8);
             top: 40px;
             left: 160px;
+        }
+        img {
+            @include pc-1440 {
+                transform: scale(0.9);
+            }
+            @include media-h(750px) {
+                transform: scale(0.8);
+            }
+            @include m-1024 {
+                transform: scale(0.8);
+            }
         }
     }
     .gateBox {
