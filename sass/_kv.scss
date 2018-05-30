@@ -167,7 +167,7 @@
             bottom: -62px;
         }
         @include m-413 {
-            right: -26px;
+            right: -18px;
             bottom: -104px;
         }
         @include m-374 {
@@ -454,5 +454,11 @@
     .line-kv-r,
     .line-kv-l {
         width: 100%;
+        @include m-767 {
+            img {
+                width: auto !important;
+                height: 100% !important;
+            }
+        }
     }
 }

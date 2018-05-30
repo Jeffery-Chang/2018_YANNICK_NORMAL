@@ -137,7 +137,7 @@
             });
         },
         initPage(){
-            var video_part = '.video h2, .video .sub, .video .videoBox a.por';
+            var video_part = '.video h2, .video .sub, .video .videoBox.por';
             var video_girl = '.video .girl';
             var video_bird = '.video .bird';
             var video_view = (!this.chkMobile()) ? .5 : .8;
@@ -314,9 +314,6 @@
             $('a.por').click(function(e){
                 e.preventDefault();
 
-                // 暫不開放 還沒有影片連結
-                return;
-
                 var videoID = $(this).data('video');
                 $this.popupOpen(videoID);
             });
@@ -354,11 +351,11 @@
             if(id != undefined){
                 content.find('.embed-container').append('<iframe frameborder="0" allow="autoplay" allowfullscreen="1" src="https://www.youtube.com/embed/'+ id +'?rel=0&amp;controls=0?ecver=2&autoplay=1"></iframe>');
                 content.find('.embed-container, .close-btn').show();
-                content.find('.map_img').hide();
+                content.find('.map_img').remove();
             }else{
                 content.find('.embed-container, .close-btn').hide();
                 content.find('.embed-container').empty();
-                content.find('.map_img').show();
+                content.find('.container').append('<img class="map_img" src="https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_622595638142018053056.jpg" alt="">');
             }
 
             content.fadeIn('fast');

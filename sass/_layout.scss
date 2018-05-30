@@ -38,7 +38,6 @@ body {
     line-height: 1.5;
     text-align: center;
     color: black;
-    font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
     min-width: 314px;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased;
@@ -48,11 +47,18 @@ body {
     position: relative;
     z-index: 0;
     overflow: hidden;
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
     @include media-min(768px) {
         min-width: 1024px;
     }
     @include m-767 {
         width: 100%;
+    }
+    p,
+    div,
+    span,
+    a {
+        font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
     }
 }
 

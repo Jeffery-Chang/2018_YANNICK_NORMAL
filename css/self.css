@@ -1,28 +1,28 @@
 @media screen and (min-width: 768px) {
-    .menu_header {
+    .yannick .menu_header {
         position: relative;
         top: -50px;
         opacity: 0;
     }
-    .menu_header.active {
+    .yannick .menu_header.active {
         top: 0px;
         opacity: 1;
         transition: top .5s ease, opacity .5s ease;
     }
-    .menu_header .header_hide {
+    .yannick .menu_header .header_hide {
         height: 120px;
     }
-    header {
+    .yannick header {
         position: absolute;
         top: 0;
     }
 }
 
-.lightbox {
+.yannick .lightbox {
     display: none;
 }
 
-.embed-container {
+.yannick .embed-container {
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -30,9 +30,9 @@
     max-width: 100%;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.yannick .embed-container iframe,
+.yannick .embed-container object,
+.yannick .embed-container embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,38 +51,38 @@
 
 /* tm版 */
 
-.kv h1 > span,
-.kv .ytm-logo li {
+.yannick .kv h1 > span,
+.yannick .kv .ytm-logo li {
     transform: matrix(1, 0, 0, 1, 0, -50);
     opacity: 0;
 }
 
-.kv .b1 {
+.yannick .kv .b1 {
     transform: matrix(1, 0, 0, 1, 0, 50);
     opacity: 0;
 }
 
-.kv .b2 {
+.yannick .kv .b2 {
     transform: matrix(1, 0, 0, 1, 0, 50);
     opacity: 0;
 }
 
-.kv .b3 {
+.yannick .kv .b3 {
     transform: matrix(1, 0, 0, 1, 0, 50);
     opacity: 0;
 }
 
-.kv .mrt {
+.yannick .kv .mrt {
     transform: matrix(1, 0, 0, 1, -200, 0);
     opacity: 0;
 }
 
-.kv .gateBox .gate {
+.yannick .kv .gateBox .gate {
     transform: matrix(1, 0, 0, 1, 0, 100) scaleY(0);
     opacity: 0;
 }
 
-.kv .machine-kv {
+.yannick .kv .machine-kv {
     transform: matrix(1, 0, 0, 1, 0, 200) scaleY(0);
     opacity: 0;
     -moz-transition: none;
@@ -91,65 +91,65 @@
     transition: none;
 }
 
-.kv .mom,
-.kv .dad {
+.yannick .kv .mom,
+.yannick .kv .dad {
     transform: matrix(1, 0, 0, 1, 50, 0);
     opacity: 0;
 }
 
-.kv .couple-kv {
+.yannick .kv .couple-kv {
     transform: matrix(1, 0, 0, 1, 100, 0);
     opacity: 0;
 }
 
 /* in stage */
 
-.video .bird,
-.product .gift-bird {
+.yannick .video .bird,
+.yannick .product .gift-bird {
     transform: matrix(1, 0, 0, 1, 100, 200);
     opacity: 0;
 }
 
-.video .bird.active,
-.product .gift-bird.active {
+.yannick .video .bird.active,
+.yannick .product .gift-bird.active {
     transform: matrix(1, 0, 0, 1, 0, 0);
     opacity: 1;
     transition: all 1s ease;
 }
 
-.location .machine {
+.yannick .location .machine {
     transform: matrix(1, 0, 0, 1, 0, 200) scaleY(0);
     opacity: 0;
 }
 
-.location .star1,
-.location .star2,
-.location .star3 {
+.yannick .location .star1,
+.yannick .location .star2,
+.yannick .location .star3 {
     transform: matrix(1, 0, 0, 1, 0, 50);
     opacity: 0;
 }
 
-.location .machineBox.active .machine {
+.yannick .location .machineBox.active .machine {
     transform: matrix(1, 0, 0, 1, 0, 0) scaleY(1);
     opacity: 1;
     transition: all .4s cubic-bezier(0.175, 0.885, 0.595, 1.355);
 }
 
-.location .machineBox.active .star1 {
+.yannick .location .machineBox.active .star1 {
     transform: matrix(1, 0, 0, 1, 0, 0);
     opacity: 1;
     transition: all .25s ease;
     transition-delay: .2s;
 }
 
-.location .machineBox.active .star2 {
+.yannick .location .machineBox.active .star2 {
     transform: matrix(1, 0, 0, 1, 0, 0);
     opacity: 1;
     transition: all .25s ease;
     transition-delay: .1s;
 }
 
-.location .machineBox.active .star3 {
+.yannick .location .machineBox.active .star3 {
     transform: matrix(1, 0, 0, 1, 0, 0);
     opacity: 1;
     transition: all .25s ease;
