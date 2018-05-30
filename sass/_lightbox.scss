@@ -1,0 +1,34 @@
+.yannick {
+    .lightbox {
+        width: 100%;
+        height: 100vh;
+        background: rgba($color: black, $alpha: 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        .container {
+            width: 60%;
+            @include pos-mid;
+            @include m-767 {
+                width: 100%;
+            }
+        }
+        .close-btn {
+            width: 60px;
+            display: block;
+            right: 20px;
+            top: 20px;
+            transition: .3s ease;
+            @include m-767 {
+                right: inherit;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 8%;
+            }
+            @include hover {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

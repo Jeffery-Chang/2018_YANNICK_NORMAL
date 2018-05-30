@@ -1,100 +1,100 @@
-footer {
-    margin-top: 135px;
-    .main {
-        width: 100%;
-        background: $red;
-        padding: 70px 0;
-        text-align: left;
-        @include m-767 {
-            padding: 50px 0;
+.yannick {
+    footer {
+        margin-top: 135px;
+        padding-bottom: 10px;
+        .main {
+            width: 100%; // background: $red;
+            // padding: 70px 0;
+            // text-align: left;
+            @include m-767 {
+                // padding: 50px 0;
+            }
+            &:before {
+                content: '';
+                width: 100%;
+                height: 17px;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_938653842152018052538.png) repeat-x;
+            }
         }
-        &:before {
-            content: '';
-            width: 100%;
-            height: 17px;
-            display: block;
-            position: absolute;
-            top: -17px;
-            left: 0;
-            background: url(../img/line-footer.png) repeat-x;
+        .mrt-cart {
+            left: -20%;
+            top: -66px;
+            @include m-767 {
+                left: -100%;
+            }
+            img {
+                width: auto !important;
+                height: 65px !important;
+            }
         }
-    }
-    .mrt-cart {
-        left: -20%;
-        top: -80px;
-        @include m-767 {
-            left: -100%;
-        }
-        img {
-            width: auto;
-            height: 65px;
-        }
-    }
-    li {
-        font-size: 1.3rem;
-        color: white;
-        line-height: 2.15;
-        font-weight: 500;
-    }
-    .right {
-        color: white;
-        text-align: right;
-    }
-    .left {
-        margin-right: 170px;
-        @include m-1024 {
-            margin-right: 100px;
-        }
-        @include m-767 {
-            margin-right: 0;
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-    a {
-        transition: transform .3s ease;
-        @include hover {
-            transform: translateY(-3px);
-        }
-    }
-}
-
-.footer-logo {
-    width: 170px;
-    margin-right: 30px;
-    @include m-767 {
-        width: 150px;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-}
-
-.social {
-    margin-bottom: 10px;
-    >* {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    span {
-        &:first-child {
-            line-height: 1;
+        li {
             font-size: 1.3rem;
+            color: white;
+            line-height: 2.15;
+            font-weight: 500;
         }
-        &:nth-child(2) {
-            width: 30px;
-            height: 1px;
-            background: #fff;
-            display: inline-block;
-            margin: 0 20px;
+        .right {
+            color: white;
+            text-align: right;
+        }
+        .left {
+            margin-right: 170px;
+            @include m-1024 {
+                margin-right: 100px;
+            }
+            @include m-767 {
+                margin-right: 0;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        a {
+            transition: transform .3s ease;
+            @include hover {
+                transform: translateY(-3px);
+            }
         }
     }
-    a {
-        &.ig {
-            margin: 0 20px;
+    .footer-logo {
+        width: 170px;
+        margin-right: 30px;
+        @include m-767 {
+            width: 150px;
+            margin-right: 0;
+            margin-bottom: 10px;
         }
-        img {
-            height: 23px;
-            width: auto;
+    }
+    .social {
+        margin-bottom: 10px;
+        >* {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span {
+            &:first-child {
+                line-height: 1;
+                font-size: 1.3rem;
+            }
+            &:nth-child(2) {
+                width: 30px;
+                height: 1px;
+                background: #fff;
+                display: inline-block;
+                margin: 0 20px;
+            }
+        }
+        a {
+            &.ig {
+                margin: 0 20px;
+            }
+            img {
+                height: 23px;
+                width: auto;
+            }
         }
     }
 }

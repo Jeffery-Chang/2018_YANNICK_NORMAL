@@ -8,27 +8,59 @@ body {
     font-size: 1.6rem;
 }
 
-html,
-body {
-    width: 100%;
+// html,
+// body {
+//     width: 100%;
+//     @extend %fw_r;
+//     line-height: 1.5;
+//     text-align: center;
+//     color: black;
+//     margin: 0;
+//     padding: 0;
+//     font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif;
+//     min-width: 314px;
+//     -webkit-overflow-scrolling: touch;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-text-size-adjust: 100%;
+//     -ms-text-size-adjust: 100%;
+//     overflow-x: hidden;
+//     position: relative;
+//     z-index: 0;
+//     @include media-min(768px) {
+//         min-width: 1024px;
+//     }
+// }
+.wrap {
+    max-width: 1200px;
+    margin: auto;
     @extend %fw_r;
     line-height: 1.5;
     text-align: center;
     color: black;
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif;
+    font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
     min-width: 314px;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    overflow-x: hidden;
     position: relative;
     z-index: 0;
+    overflow: hidden;
     @include media-min(768px) {
         min-width: 1024px;
+    }
+    @include m-767 {
+        width: 100%;
+    }
+}
+
+.yannick {
+    img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
     }
 }
 
@@ -39,12 +71,6 @@ body {
 
 *:focus {
     outline: none;
-}
-
-img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 a {

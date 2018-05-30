@@ -1,114 +1,114 @@
 // header
-header {
-    width: 100%;
-    background: #fff;
-    padding: 15px;
-    @include m-767 {
-        position: fixed;
-        height: 100vh;
-        background: $red;
-        z-index: 10;
-        top: 0;
-        left: -100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    ul {
-        display: flex;
-        justify-content: center;
+.yannick {
+    header {
+        width: 100%;
+        background: #fff;
+        padding: 15px;
         @include m-767 {
-            flex-direction: column;
-            padding-bottom: 80px;
+            position: fixed;
+            height: 100vh;
+            background: $red;
+            z-index: 10;
+            top: 0;
+            left: -100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-    }
-    li {
-        width: 230px;
-        position: relative;
-        @include m-767 {
-            width: 100%;
-            margin: 25px auto;
+        ul {
+            display: flex;
+            justify-content: center;
+            @include m-767 {
+                flex-direction: column;
+                padding-bottom: 80px;
+            }
         }
-        &:not(:last-child) {
-            &:after {
-                content: '';
-                width: 8px;
-                height: 100%;
-                background: url(../img/menu-bor.png) no-repeat;
-                background-size: contain;
-                position: absolute;
-                right: 0;
-                top: 0;
-                display: block;
-                @include m-767 {
-                    background: none;
-                    border-bottom: 2px dashed #ffffff7d;
-                    right: inherit;
-                    width: 100%;
-                    left: 50%;
-                    top: 25px;
-                    transform: translateX(-50%);
+        li {
+            width: 230px;
+            position: relative;
+            text-align: center;
+            @include m-767 {
+                width: 100%;
+                margin: 25px auto;
+            }
+            &:not(:last-child) {
+                &:after {
+                    content: '';
+                    width: 8px;
+                    height: 100%;
+                    background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_989331546152018052515.png) no-repeat;
+                    background-size: contain;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    display: block;
+                    @include m-767 {
+                        background: none;
+                        border-bottom: 2px dashed #ffffff7d;
+                        right: inherit;
+                        width: 100%;
+                        left: 50%;
+                        top: 25px;
+                        transform: translateX(-50%);
+                    }
                 }
             }
         }
+        a {
+            color: black;
+            font-size: 1.5rem;
+            transition: transform .3s ease;
+            span {
+                display: block;
+            }
+            @include hover {
+                transform: translateY(-5px);
+                color: $red;
+            }
+            @include m-767 {
+                color: white;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+        }
+        .icon {
+            display: inline-block;
+            margin-bottom: 5px;
+            img {
+                height: 53px;
+            }
+            @include m-767 {
+                display: none;
+            }
+        }
     }
-    a {
-        color: black;
-        font-size: 1.5rem;
-        transition: transform .3s ease;
-        span {
-            display: block;
-        }
-        @include hover {
-            transform: translateY(-5px);
-            color: $red;
-        }
-        @include m-767 {
-            color: white;
-            font-size: 1.8rem;
-            font-weight: 500;
-        }
+    .scrolled {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        border-bottom: 5px solid $red;
     }
-    .icon {
-        display: inline-block;
-        margin-bottom: 5px;
-        img {
-            height: 53px;
-        }
-        @include m-767 {
+    .menu-btn {
+        width: 23px;
+        height: 27vh;
+        background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_623433640182018052936.png) no-repeat;
+        background-size: contain;
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 11;
+        @include media-min(768px) {
             display: none;
         }
     }
-}
-
-.scrolled {
-    position: fixed;
-    top: 0;
-    z-index: 20;
-    border-bottom: 5px solid $red;
-}
-
-.menu-btn {
-    width: 23px;
-    height: 27vh;
-    background: url(../asset/svg/menu.svg) no-repeat;
-    background-size: contain;
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 11;
-    @include media-min(768px) {
-        display: none;
+    .open-header {
+        left: 0;
     }
-}
-
-.open-header {
-    left: 0;
-}
-
-.open-btn {
-    background: url(../asset/svg/menu-close.svg) no-repeat right center;
-    left: inherit;
-    right: 0;
+    .open-btn {
+        background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_623433640182018052936.png) no-repeat right center;
+        left: inherit;
+        right: 0;
+    }
 }

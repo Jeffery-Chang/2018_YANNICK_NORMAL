@@ -1,202 +1,198 @@
-section {
-    width: 100%;
-    position: relative;
-}
-
-.break-m {
-    @include m-767 {
-        display: block;
-    }
-}
-
-.none-m {
-    @include m-767 {
-        display: none;
-    }
-}
-
-.line-cir {
-    position: relative;
-    &:after {
-        content: '';
+.yannick {
+    section {
         width: 100%;
-        height: 20px;
-        background: url(../img/tt-line.png) no-repeat;
-        background-size: 100%;
-        position: absolute;
-        bottom: -23px;
-        left: 0;
+        position: relative;
     }
-}
-
-.abs {
-    position: absolute;
-}
-
-.btn-go {
-    @include size(167px 219px);
-    background: url(../img/go.png) no-repeat center bottom;
-    background-size: contain;
-    display: block;
-    @include position(fixed, 180px 40px null null);
-    color: white;
-    font-size: 2.8rem;
-    padding-top: 107px;
-    font-weight: 500;
-    z-index: 5;
-    transition: all 0.3s ease;
-    @include pc-1440 {
-        transform: scale(0.8);
-    }
-    @include media(1200px) {
-        right: 0;
-        transform: scale(0.7);
-    }
-    @include m-1024 {
-        transform: scale(0.6);
-        top: 120px;
-    }
-    @include m-767 {
-        transform: scale(0.6);
-        top: inherit;
-        bottom: 6%;
-        padding-top: 44px;
-        right: -25px;
-        height: 157px;
-        background-size: 100%;
-    }
-    @include m-374 {
-        transform: scale(0.4);
-        right: -37px;
-    }
-}
-
-h2 {
-    font-size: 3.8rem;
-    letter-spacing: 3.8px;
-    position: relative;
-    @include m-767 {
-        font-size: 3rem;
-        letter-spacing: 3px;
-    }
-    @include m-413 {
-        font-size: 2.6rem;
-        letter-spacing: 2.6px;
-    }
-    @include m-374 {
-        font-size: 2.2rem;
-        letter-spacing: 2.2px;
-    }
-    span {
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .ytm {
-        width: 93px;
-        margin-right: 10px;
+    .break-m {
         @include m-767 {
-            width: 65px;
+            display: block;
+        }
+    }
+    .none-m {
+        @include m-767 {
+            display: none;
+        }
+    }
+    .line-cir {
+        position: relative;
+        &:after {
+            content: '';
+            width: 100%;
+            height: 20px;
+            background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_912722849152018052528.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            bottom: -23px;
+            left: 0;
+        }
+    }
+    .abs {
+        position: absolute;
+    }
+    .btn-go {
+        @include size(167px 219px);
+        background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_667835839152018052558.png) no-repeat center bottom;
+        background-size: contain;
+        display: block;
+        @include position(fixed, 180px 40px null null);
+        color: white;
+        font-size: 2.8rem;
+        padding-top: 107px;
+        font-weight: 500;
+        z-index: 5;
+        transition: all 0.3s ease;
+        @include pc-1440 {
+            transform: scale(0.8);
+        }
+        @include media(1200px) {
+            right: 0;
+            transform: scale(0.7);
+        }
+        @include m-1024 {
+            transform: scale(0.6);
+            top: 120px;
+        }
+        @include m-767 {
+            top: inherit;
+            right: inherit;
+            bottom: 6%;
+            padding-top: 44px;
+            left: 41%;
+            height: 157px;
+            background-size: 100%;
+            transform: scale(0.6) translateX(-50%);
         }
         @include m-374 {
-            width: 46px;
-            margin-right: 5px;
+            transform: scale(0.4);
+            right: -37px;
         }
     }
-}
-
-.sub {
-    font-size: 2.4rem;
-    letter-spacing: 2.4px;
-    margin-bottom: 35px;
-    @include m-767 {
-        font-size: 1.8rem;
-        letter-spacing: 1.8px;
-        margin-top: 10px;
-        margin-bottom: 13px;
-    }
-    @include m-413 {
-        font-size: 1.6rem;
-        letter-spacing: 1.6px;
-        margin-top: 10px;
-        margin-bottom: 15px;
-    }
-    span {
-        display: inline-block;
-        letter-spacing: 2.4px;
-    }
-    .ytm {
-        width: 70px;
-        margin-right: 7px;
+    h2 {
+        font-size: 3.8rem;
+        letter-spacing: 3.8px;
+        position: relative;
         @include m-767 {
-            width: 45px;
+            font-size: 3rem;
+            letter-spacing: 3px;
         }
         @include m-413 {
-            width: 40px;
+            font-size: 2.6rem;
+            letter-spacing: 2.6px;
+        }
+        @include m-374 {
+            font-size: 2.2rem;
+            letter-spacing: 2.2px;
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .ytm {
+            width: 93px;
+            margin-right: 10px;
+            @include m-767 {
+                width: 65px;
+            }
+            @include m-374 {
+                width: 46px;
+                margin-right: 5px;
+            }
         }
     }
-}
-
-.icon-play {
-    width: 85px;
-    @include pos-mid;
-    z-index: 1;
-    @include m-767 {
-        width: 70px;
+    .sub {
+        font-size: 2.4rem;
+        letter-spacing: 2.4px;
+        margin-bottom: 35px;
+        @include m-767 {
+            font-size: 1.8rem;
+            letter-spacing: 1.8px;
+            margin-top: 10px;
+            margin-bottom: 13px;
+        }
+        @include m-413 {
+            font-size: 1.6rem;
+            letter-spacing: 1.6px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        span {
+            display: inline-block;
+            letter-spacing: 2.4px;
+        }
+        .ytm {
+            width: 70px;
+            margin-right: 7px;
+            @include m-767 {
+                width: 45px;
+            }
+            @include m-413 {
+                width: 40px;
+            }
+        }
     }
-}
-
-.red {
-    color: $red;
-}
-
-h3 {
-    font-size: 2.4rem;
-    letter-spacing: 2.4px;
-    position: relative;
-    @include m-767 {
-        font-size: 1.8rem;
+    .icon-play {
+        width: 85px;
+        @include pos-mid;
+        z-index: 1;
+        @include m-767 {
+            width: 70px;
+        }
     }
-    @include m-374 {
-        font-size: 1.6rem;
+    .red {
+        color: $red;
     }
-}
-
-.btn {
-    width: 270px;
-    height: 70px;
-    line-height: 70px;
-    color: white;
-    font-size: 2rem;
-    display: inline-block;
-    background: $red;
-    letter-spacing: 2px;
-    overflow: hidden;
-    position: relative;
-    @include transition(.35s ease all);
-    @include hover {
-        line-height: 9em;
-        background: black;
+    h3 {
+        font-size: 2.4rem;
+        letter-spacing: 2.4px;
+        position: relative;
+        @include m-767 {
+            font-size: 1.8rem;
+        }
+        @include m-374 {
+            font-size: 1.6rem;
+        }
     }
-    @include m-767 {
-        font-size: 1.6rem;
-        height: 60px;
-        line-height: 60px;
+    .btn {
+        width: 270px;
+        height: 70px;
+        line-height: 53px;
+        color: white;
+        font-size: 2rem;
+        display: inline-block;
+        background: $red;
+        letter-spacing: 2px;
+        overflow: hidden;
+        position: relative;
+        @include transition(.35s ease all);
+        @include hover {
+            line-height: 9em;
+            background: black;
+        }
+        @include m-767 {
+            font-size: 1.6rem;
+            height: 60px;
+            line-height: 45px;
+        }
+        @include m-413 {
+            font-size: 1.5rem;
+            height: 60px;
+            line-height: 45px;
+        }
+        @include m-374 {
+            font-size: 1.3rem;
+            height: 50px;
+            line-height: 33px;
+        }
+        &:before {
+            content: attr(data-text);
+            position: absolute;
+            top: -2.75em;
+        }
     }
-    @include m-374 {
-        font-size: 1.4rem;
-        height: 50px;
-        line-height: 50px;
+    .line-red {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
     }
-    &:before {
-        content: attr(data-text);
-        position: absolute;
-        top: -2.75em;
-    }
-}
-
-.line-red {
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
 }

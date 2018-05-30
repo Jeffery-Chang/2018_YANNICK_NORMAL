@@ -5,17 +5,18 @@
 // font style
 @import "color";
 @import "typography";
-@import "iconfont";
+// @import "iconfont";
 // mixin
 @import "mixin";
 @import "partials";
-@import "z-index";
+// @import "z-index";
 // layout
-@import "trans";
+// @import "trans";
 @import "layout";
 // form
-@import "form";
+// @import "form";
 // web own style
+@import "lightbox";
 @import "header";
 @import "bur";
 @import "menubox";

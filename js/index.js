@@ -20,9 +20,11 @@
 
             $(window).on('scroll', () => {
                 this.scroll();
+            }).on('resize', () => {
+                this.resize()
             }).on('load', () => {
                 this.initKV();
-            }).scroll();
+            }).scroll().resize();
         },
         initKV(){
             /* sr版
@@ -361,8 +363,16 @@
 
             content.fadeIn('fast');
         },
+        resize(){
+            if(this.chkMobile()){
+                $('header').removeClass('scrolled');
+            }else{
+                $('.wrap a.menu-btn').removeClass('open-btn');
+                $('header').removeClass('open-header');
+            }
+        },
         scroll(){
-            var kv_position = $('section.kv').innerHeight();
+            var kv_position = $('section.kv').innerHeight() + $('section.kv').offset().top;
             var trans_position = $('.location .mrt-line').offset().top;
 
             // MENU FIXED
@@ -376,7 +386,7 @@
                 // MENU IN
                 if($(window).scrollTop() > 0 && !$('.menu_header').hasClass('active')){
                     $('.menu_header').addClass('active');
-                }
+                };
             }
 
             // TRANS PLAY
