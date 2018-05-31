@@ -31,60 +31,58 @@ body {
 //         min-width: 1024px;
 //     }
 // }
-.wrap {
-    max-width: 1200px;
-    margin: auto;
-    @extend %fw_r;
-    line-height: 1.5;
-    text-align: center;
-    color: black;
-    min-width: 314px;
-    -webkit-overflow-scrolling: touch;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-    font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
-    @include media-min(768px) {
-        min-width: 1024px;
-    }
-    @include m-767 {
-        width: 100%;
-    }
-    p,
-    div,
-    span,
-    a {
-        font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
-    }
-}
-
 .yannick {
     img {
         width: 100% !important;
         height: auto !important;
         display: block !important;
     }
-}
-
-* {
-    box-sizing: border-box;
-    outline: none;
-}
-
-*:focus {
-    outline: none;
-}
-
-a {
-    text-decoration: none; // behavior: expression(this.onFocus=this.blur());
-    display: inline-block;
-    /* for IE */
-}
-
-ul {
-    font-size: 0;
+    * {
+        box-sizing: border-box;
+        outline: none;
+        margin: 0;
+        padding: 0;
+    }
+    *:focus {
+        outline: none;
+    }
+    a {
+        text-decoration: none; // behavior: expression(this.onFocus=this.blur());
+        display: inline-block;
+        /* for IE */
+    }
+    ul {
+        font-size: 0;
+        list-style: none;
+    }
+    .wrap {
+        max-width: 1200px;
+        margin: auto;
+        @extend %fw_r;
+        line-height: 1.5;
+        text-align: center;
+        color: black;
+        min-width: 314px;
+        -webkit-overflow-scrolling: touch;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
+        @include media-min(768px) {
+            min-width: 1024px;
+        }
+        @include m-767 {
+            width: 100%;
+        }
+        p,
+        div,
+        span,
+        a {
+            font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important;
+        }
+    }
 }

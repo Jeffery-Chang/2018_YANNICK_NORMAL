@@ -53,19 +53,21 @@
             top: 120px;
         }
         @include m-767 {
-            top: inherit;
-            right: inherit;
-            bottom: 6%;
-            padding-top: 44px;
-            left: 41%;
-            height: 157px;
-            background-size: 100%;
-            transform: scale(0.6) translateX(-50%);
-        }
-        @include m-374 {
-            transform: scale(0.4);
-            right: -37px;
-        }
+            display: none;
+        } // @include m-767 {
+        //     top: inherit;
+        //     right: inherit;
+        //     bottom: 6%;
+        //     padding-top: 44px;
+        //     left: 41%;
+        //     height: 157px;
+        //     background-size: 100%;
+        //     transform: scale(0.6) translateX(-50%);
+        // }
+        // @include m-374 {
+        //     transform: scale(0.4);
+        //     left: 25%;
+        // }
     }
     h2 {
         font-size: 3.8rem;

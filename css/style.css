@@ -1,139 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
-
-html {
-  line-height: 1; }
-
-ol,
-ul {
-  list-style: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-
-q,
-blockquote {
-  quotes: none; }
-
-q:before,
-q:after,
-blockquote:before,
-blockquote:after {
-  content: "";
-  content: none; }
-
-a img {
-  border: none; }
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block; }
-
-.wrap {
+.yannick .wrap {
   font-weight: 400; }
 
 h1 {
@@ -264,20 +129,7 @@ h6 {
       top: 120px; } }
   @media screen and (max-width: 767px) {
     .yannick .btn-go {
-      top: inherit;
-      right: inherit;
-      bottom: 6%;
-      padding-top: 44px;
-      left: 41%;
-      height: 157px;
-      background-size: 100%;
-      -webkit-transform: scale(0.6) translateX(-50%);
-      transform: scale(0.6) translateX(-50%); } }
-  @media screen and (max-width: 374px) {
-    .yannick .btn-go {
-      -webkit-transform: scale(0.4);
-      transform: scale(0.4);
-      right: -37px; } }
+      display: none; } }
 
 .yannick h2 {
   font-size: 38px;
@@ -417,7 +269,30 @@ body {
   font-size: 16px;
   font-size: 1.6rem; }
 
-.wrap {
+.yannick img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important; }
+
+.yannick * {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0; }
+
+.yannick *:focus {
+  outline: none; }
+
+.yannick a {
+  text-decoration: none;
+  display: inline-block;
+  /* for IE */ }
+
+.yannick ul {
+  font-size: 0;
+  list-style: none; }
+
+.yannick .wrap {
   max-width: 1200px;
   margin: auto;
   line-height: 1.5;
@@ -434,36 +309,16 @@ body {
   overflow: hidden;
   font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important; }
   @media screen and (min-width: 768px) {
-    .wrap {
+    .yannick .wrap {
       min-width: 1024px; } }
   @media screen and (max-width: 767px) {
-    .wrap {
+    .yannick .wrap {
       width: 100%; } }
-  .wrap p,
-  .wrap div,
-  .wrap span,
-  .wrap a {
+  .yannick .wrap p,
+  .yannick .wrap div,
+  .yannick .wrap span,
+  .yannick .wrap a {
     font-family: 'Noto Sans TC', 'PingFang TC', 'Heiti TC', 'Apple LiGothic Medium', 'Microsoft JhengHei', sans-serif !important; }
-
-.yannick img {
-  width: 100% !important;
-  height: auto !important;
-  display: block !important; }
-
-* {
-  box-sizing: border-box;
-  outline: none; }
-
-*:focus {
-  outline: none; }
-
-a {
-  text-decoration: none;
-  display: inline-block;
-  /* for IE */ }
-
-ul {
-  font-size: 0; }
 
 .yannick .lightbox {
   width: 100%;
@@ -618,7 +473,8 @@ ul {
   left: 0; }
 
 .yannick .open-btn {
-  background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_623433640182018052936.png) no-repeat right center;
+  background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_473704740182018052947.png) no-repeat right center;
+  background-size: contain;
   left: inherit;
   right: 0; }
 

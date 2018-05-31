@@ -9,10 +9,10 @@
     var indexCtrl = {
         isAnimate: false,
         init(){
-            if(this.chkIE() <= 10){
+            /*if(this.chkIE() <= 10){
                 location.href = 'index_ie.html';
                 return;
-            }
+            }*/
 
             this.menuSet();
             this.transIn();
@@ -82,13 +82,13 @@
             });*/
 
             /* tm版 */
-            var title = $('.kv h1 > span, .kv .ytm-logo li');
-            var balloon = $('.kv .b1, .kv .b2, .kv .b3');
-            var MRT = $('.kv .mrt');
-            var machine = $('.kv .machine-kv');
-            var family = $('.kv .mom, .kv .dad');
-            var gate = $('.kv .gateBox .gate');
-            var couple = $('.kv .couple-kv');
+            var title = $('.yannick .kv h1 > span, .yannick .kv .ytm-logo li');
+            var balloon = $('.yannick .kv .b1, .yannick .kv .b2, .yannick .kv .b3');
+            var MRT = $('.yannick .kv .mrt');
+            var machine = $('.yannick .kv .machine-kv');
+            var family = $('.yannick .kv .mom, .yannick .kv .dad');
+            var gate = $('.yannick .kv .gateBox .gate');
+            var couple = $('.yannick .kv .couple-kv');
             TweenMax.staggerTo(title, .4, {
                 y: 0,
                 opacity: 1
@@ -137,9 +137,9 @@
             });
         },
         initPage(){
-            var video_part = '.video h2, .video .sub, .video .videoBox.por';
-            var video_girl = '.video .girl';
-            var video_bird = '.video .bird';
+            var video_part = '.yannick .video h2, .yannick .video .sub, .yannick .video .yannick .videoBox.por';
+            var video_girl = '.yannick .video .girl';
+            var video_bird = '.yannick .video .bird';
             var video_view = (!this.chkMobile()) ? .5 : .8;
             sr.reveal(video_part, {
                 origin: 'top',
@@ -159,18 +159,18 @@
                 });
             }
 
-            var card_part = '.card h2, .card h3, .card .main, .card .btnBox';
+            var card_part = '.yannick .card h2, .yannick .card h3, .yannick .card .main, .yannick .card .btnBox';
             sr.reveal(card_part, {
                 origin: 'top',
                 opacity: 0,
                 viewFactor: .5,
             }, 300);
 
-            var pdt_part1 = '.product > h2, .product .main';
-            var pdt_part2 = '.product .gift h2 > span, .product .giftInfo > p';
-            var pdt_bag = (!this.chkMobile()) ? '.product .bag, .product .leaf1, .product .leaf2' : '.product .inner';
-            var pdt_couple = '.product .couple';
-            var pdt_bird = '.product .gift-bird';
+            var pdt_part1 = '.yannick .product > h2, .yannick .product .main';
+            var pdt_part2 = '.yannick .product .gift h2 > span, .yannick .product .giftInfo > p';
+            var pdt_bag = (!this.chkMobile()) ? '.yannick .product .bag, .yannick .product .leaf1, .yannick .product .leaf2' : '.yannick .product .inner';
+            var pdt_couple = '.yannick .product .couple';
+            var pdt_bird = '.yannick .product .gift-bird';
             sr.reveal(pdt_part1, {
                 origin: 'top',
                 opacity: 0,
@@ -212,8 +212,8 @@
                 });
             }
 
-            var ytm_part = '.ytmInfo h2, .ytmInfo .main';
-            var ytm_phone = '.ytmInfo .deco';
+            var ytm_part = '.yannick .ytmInfo h2, .yannick .ytmInfo .main';
+            var ytm_phone = '.yannick .ytmInfo .deco';
             sr.reveal(ytm_part, {
                 origin: 'top',
                 opacity: 0,
@@ -226,15 +226,15 @@
                 delay: 400,
             });
 
-            var feature_part = '.feature h2, .feature ul';
+            var feature_part = '.yannick .feature h2, .yannick .feature ul';
             sr.reveal(feature_part, {
                 origin: 'top',
                 opacity: 0,
                 viewFactor: .5,
             }, 300);
 
-            var location_part = '.location h2, .location .btn';
-            var location_info = '.location .mrt-line li';
+            var location_part = '.yannick .location h2, .yannick .location .btn';
+            var location_info = '.yannick .location .mrt-line li';
             sr.reveal(location_part, {
                 origin: 'top',
                 opacity: 0,
@@ -245,13 +245,13 @@
                 opacity: 0,
                 viewFactor: .5,
                 beforeReveal: (domEl) => {
-                    if($(domEl).hasClass('show') && !this.chkMobile()) $('.location .machineBox').addClass('active');
+                    if($(domEl).hasClass('show') && !this.chkMobile()) $('.yannick .location .machineBox').addClass('active');
                 },
             }, 250);
         },
         transIn(){
             window.tl = new TimelineMax({ repeat: -1, paused: true });
-            var step1 = new TweenMax.fromTo('footer .mrt-cart img', 5, {
+            var step1 = new TweenMax.fromTo('.yannick footer .mrt-cart img', 5, {
                 x: 20,
                 ease: Expo.easeIn,
             },{
@@ -259,9 +259,9 @@
                 ease: Expo.easeIn,
             });
             var step2 = function(time){
-                return new TweenMax.to('footer .mrt-cart img', 2, { });
+                return new TweenMax.to('.yannick footer .mrt-cart img', 2, { });
             }
-            var step3 = new TweenMax.fromTo('footer .mrt-cart img', 1, {
+            var step3 = new TweenMax.fromTo('.yannick footer .mrt-cart img', 1, {
                 x: -250,
                 ease: Back.easeOut.config(1)
             },{
@@ -277,41 +277,41 @@
             var  $this = this;
 
             // PC
-            $('header li').click(function(e){
+            $('.yannick header li').click(function(e){
                 e.preventDefault();
                 var index = $(this).index();
-                var headerHeight = $('header').outerHeight(true);
+                var headerHeight = $('.yannick header').outerHeight(true);
                 var distance = 0;
                 var adj_dis = ($this.chkMobile()) ? 20 : headerHeight * 1.5;
 
                 if(index == 0){
-                    distance = $('section.card h2').offset().top - adj_dis;
+                    distance = $('.yannick section.card h2').offset().top - adj_dis;
                 }else if(index == 1){
-                    distance = $('section.product h2').offset().top - adj_dis;
+                    distance = $('.yannick section.product h2').offset().top - adj_dis;
                 }else if(index == 2){
-                    distance = $('section.ytmInfo h2').offset().top - adj_dis;
+                    distance = $('.yannick section.ytmInfo h2').offset().top - adj_dis;
                 }else if(index == 3){
-                    distance = $('section.feature h2').offset().top - adj_dis;
+                    distance = $('.yannick section.feature h2').offset().top - adj_dis;
                 }
 
-                if(isMobile.phone || isMobile.tablet) $('.wrap a.menu-btn').click();
+                if(isMobile.phone || isMobile.tablet) $('.yannick .wrap a.menu-btn').click();
                 $this.scrollPage(distance);
             });
 
             // MOBILE
-            $('.wrap a.menu-btn').click(function(e){
+            $('.yannick .wrap a.menu-btn').click(function(e){
                 e.preventDefault();
                 $(this).toggleClass('open-btn');
-                $('header').toggleClass('open-header');
+                $('.yannick header').toggleClass('open-header');
             });
 
             // BIRD
-            $('.wrap .btn-go').click(function(e){
+            $('.yannick .wrap .btn-go').click(function(e){
 
             });
 
             // VIDEO PLAY
-            $('a.por').click(function(e){
+            $('.yannick a.por').click(function(e){
                 e.preventDefault();
 
                 var videoID = $(this).data('video');
@@ -319,16 +319,17 @@
             });
 
             // MRT MAP
-            $('.location a.btn').click(function(e){
+            $('.yannick .location a.btn').click(function(e){
                 e.preventDefault();
                 $this.popupOpen();
             });
 
             // POPUP CLOSE
-            $('.lightbox').click(function(e){
+            $('.yannick .lightbox').click(function(e){
                 e.preventDefault();
                 $(this).fadeOut('fast', function(){
                     $(this).find('.embed-container').empty();
+                    $(this).find('img').remove();
                 });
             });
             // IMG PREVENT CLICK
@@ -338,20 +339,21 @@
             });*/
             
             // VIDEO CLOSE
-            $('.lightbox .close-btn').click(function(e){
+            $('.yannick .lightbox .close-btn').click(function(e){
                 e.preventDefault();
                 $(this).parent().fadeOut('fast', function(){
                     $(this).parent().find('.embed-container').empty();
+                    $(this).parent().find('img').remove();
                 });
             });
         },
         popupOpen(id){
-            var content = $('.lightbox');
+            var content = $('.yannick .lightbox');
 
             if(id != undefined){
                 content.find('.embed-container').append('<iframe frameborder="0" allow="autoplay" allowfullscreen="1" src="https://www.youtube.com/embed/'+ id +'?rel=0&amp;controls=0?ecver=2&autoplay=1"></iframe>');
                 content.find('.embed-container, .close-btn').show();
-                content.find('.map_img').remove();
+                content.find('img').remove();
             }else{
                 content.find('.embed-container, .close-btn').hide();
                 content.find('.embed-container').empty();
@@ -362,27 +364,27 @@
         },
         resize(){
             if(this.chkMobile()){
-                $('header').removeClass('scrolled');
+                $('.yannick header').removeClass('scrolled');
             }else{
-                $('.wrap a.menu-btn').removeClass('open-btn');
-                $('header').removeClass('open-header');
+                $('.yannick .wrap a.menu-btn').removeClass('open-btn');
+                $('.yannick header').removeClass('open-header');
             }
         },
         scroll(){
-            var kv_position = $('section.kv').innerHeight() + $('section.kv').offset().top;
-            var trans_position = $('.location .mrt-line').offset().top;
+            var kv_position = $('.yannick section.kv').innerHeight() + $('.yannick section.kv').offset().top;
+            var trans_position = $('.yannick .location .mrt-line').offset().top;
 
             // MENU FIXED
             if(!this.chkMobile()){
                 if($(window).scrollTop() >= kv_position){
-                    $('header').addClass('scrolled');
+                    $('.yannick header').addClass('scrolled');
                 }else{
-                    $('header').removeClass('scrolled');
+                    $('.yannick header').removeClass('scrolled');
                 };
 
                 // MENU IN
-                if($(window).scrollTop() > 0 && !$('.menu_header').hasClass('active')){
-                    $('.menu_header').addClass('active');
+                if($(window).scrollTop() > 0 && !$('.yannick .menu_header').hasClass('active')){
+                    $('.yannick .menu_header').addClass('active');
                 };
             }
 
@@ -401,7 +403,7 @@
             if(isMobile.phone || isMobile.tablet || $(window).width() <= 767) mobile_fg = true;
             return mobile_fg;
         },
-        chkIE(){
+        /*chkIE(){
             var userAgent = navigator.userAgent;
             var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1; // 判斷是否IE<11瀏覽器
             var isEdge = userAgent.indexOf("Edge") > -1 && !isIE; // 判斷是否IE的Edge瀏覽器
@@ -428,7 +430,7 @@
             }else{
                 return 13; // 不是ie瀏覽器
             }
-        },
+        },*/
     }
     indexCtrl.init();
 })();
