@@ -460,7 +460,7 @@ body {
   background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_623433640182018052936.png) no-repeat;
   background-size: contain;
   position: fixed;
-  left: 0;
+  left: 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -476,7 +476,7 @@ body {
   background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_473704740182018052947.png) no-repeat right center;
   background-size: contain;
   left: inherit;
-  right: 0; }
+  right: 10px; }
 
 @media screen and (min-width: 1025px) {
   .yannick .burBox {

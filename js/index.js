@@ -319,17 +319,16 @@
             });
 
             // MRT MAP
-            $('.yannick .location a.btn').click(function(e){
+            /*$('.yannick .location a.btn').click(function(e){
                 e.preventDefault();
                 $this.popupOpen();
-            });
+            });*/
 
             // POPUP CLOSE
             $('.yannick .lightbox').click(function(e){
                 e.preventDefault();
                 $(this).fadeOut('fast', function(){
                     $(this).find('.embed-container').empty();
-                    $(this).find('img').remove();
                 });
             });
             // IMG PREVENT CLICK
@@ -343,22 +342,21 @@
                 e.preventDefault();
                 $(this).parent().fadeOut('fast', function(){
                     $(this).parent().find('.embed-container').empty();
-                    $(this).parent().find('img').remove();
                 });
             });
         },
         popupOpen(id){
             var content = $('.yannick .lightbox');
 
-            if(id != undefined){
+            //if(id != undefined){
                 content.find('.embed-container').append('<iframe frameborder="0" allow="autoplay" allowfullscreen="1" src="https://www.youtube.com/embed/'+ id +'?rel=0&amp;controls=0?ecver=2&autoplay=1"></iframe>');
-                content.find('.embed-container, .close-btn').show();
+                /*content.find('.embed-container, .close-btn').show();
                 content.find('img').remove();
             }else{
                 content.find('.embed-container, .close-btn').hide();
                 content.find('.embed-container').empty();
                 content.find('.container').append('<img class="map_img" src="https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_622595638142018053056.jpg" alt="">');
-            }
+            }*/
 
             content.fadeIn('fast');
         },
