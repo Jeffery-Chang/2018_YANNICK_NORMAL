@@ -222,7 +222,7 @@ h6 {
 .yannick .btn {
   width: 270px;
   height: 70px;
-  line-height: 53px;
+  line-height: 70px;
   color: white;
   font-size: 20px;
   font-size: 2rem;
@@ -240,7 +240,7 @@ h6 {
     .yannick .btn {
       font-size: 1.6rem;
       height: 60px;
-      line-height: 45px; } }
+      line-height: 60px; } }
   @media screen and (max-width: 413px) {
     .yannick .btn {
       font-size: 1.5rem;
@@ -250,7 +250,7 @@ h6 {
     .yannick .btn {
       font-size: 1.3rem;
       height: 50px;
-      line-height: 33px; } }
+      line-height: 50px; } }
   .yannick .btn:before {
     content: attr(data-text);
     position: absolute;

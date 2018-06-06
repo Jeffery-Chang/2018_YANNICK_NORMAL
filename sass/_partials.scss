@@ -157,7 +157,7 @@
     .btn {
         width: 270px;
         height: 70px;
-        line-height: 53px;
+        line-height: 70px;
         color: white;
         font-size: 2rem;
         display: inline-block;
@@ -173,7 +173,7 @@
         @include m-767 {
             font-size: 1.6rem;
             height: 60px;
-            line-height: 45px;
+            line-height: 60px;
         }
         @include m-413 {
             font-size: 1.5rem;
@@ -183,7 +183,7 @@
         @include m-374 {
             font-size: 1.3rem;
             height: 50px;
-            line-height: 33px;
+            line-height: 50px;
         }
         &:before {
             content: attr(data-text);
