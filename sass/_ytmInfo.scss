@@ -41,10 +41,10 @@
                     font-size: 1.7rem;
                 }
                 @include m-413 {
-                    font-size: 1.6rem;
+                    font-size: 1.5rem;
                 }
                 @include m-374 {
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                 }
             }
             &:nth-child(2) {
@@ -56,7 +56,7 @@
                     margin-bottom: 15px;
                 }
                 @include m-374 {
-                    font-size: 1.4rem;
+                    font-size: 1.3rem;
                 }
                 span {
                     display: block;

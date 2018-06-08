@@ -3,15 +3,18 @@
         padding: 80px 0;
         background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_516082533152018052525.png) no-repeat left bottom, #e4e5e7;
         transition: all .3s ease;
-        background-size: 100%;
+        background-size: 80%;
         @include media(1200px) {
             background-size: 98%;
             background-position: -100px bottom;
         }
         @include m-767 {
-            padding: 60px 0 160px;
+            padding: 60px 0 285px;
             background: url(https://fs1.shop123.com.tw/400189/upload/harddisc/4001890_file_271513633152018052536.png) no-repeat left bottom, #e4e5e7;
             background-size: contain;
+        }
+        @include m-374 {
+            padding-bottom: 240px;
         }
         .main {
             display: flex;
@@ -69,6 +72,7 @@
             span {
                 @include m-767 {
                     display: block;
+                    font-size: 4vw;
                 }
             }
             .none-m {

@@ -93,7 +93,7 @@
                 font-size: 1.4rem;
             }
             &.cheese {
-                margin-bottom: 13px;
+                margin-bottom: 15px;
                 @include m-767 {
                     margin-bottom: 20px;
                 }
@@ -102,6 +102,10 @@
         .price {
             font-size: 2.4rem;
             font-weight: bold;
+            margin-bottom: 42px;
+            @include m-767 {
+                margin-bottom: 25px;
+            }
         }
         .line-red {
             @include m-767 {
@@ -114,16 +118,25 @@
                 }
             }
         }
-    }
-    .exclusive {
-        span {
-            font-weight: normal;
+        .exclusive {
+            margin-bottom: 20px;
+            @include m-767 {
+                margin-bottom: 25px;
+            }
             span {
                 font-weight: normal;
+                span {
+                    font-weight: normal;
+                }
+            }
+            .red {
+                font-weight: bold;
             }
         }
-        .red {
-            font-weight: bold;
+        .btn {
+            @include m-767 {
+                width: 100%;
+            }
         }
     }
     .org {

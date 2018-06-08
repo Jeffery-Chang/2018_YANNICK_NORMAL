@@ -38,8 +38,9 @@
             }
         }
         .redBox {
-            width: 27%;
+            width: 140px;
             background: $red;
+            flex-shrink: 0;
             @include m-1024 {
                 width: 10%;
             }
